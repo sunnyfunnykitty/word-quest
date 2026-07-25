@@ -605,9 +605,9 @@ function kidArt(k){
 }
 function kidById(id){ return KIDS.find(k => k.id === id) || KIDS[0]; }
 
-const QUESTIONS_PER_LEVEL = 3;
-const COINS_RIGHT = 5;       // right answer all by yourself
-const COINS_HELPED = 2;      // right after "Show me" — still worth something!
+const QUESTIONS_PER_LEVEL = 10;  // a proper quest at every shop! (Sunny's balance patch)
+const COINS_RIGHT = 2;       // right answer all by yourself
+const COINS_HELPED = 1;      // right after "Show me" — still worth something!
 
 /* ================= SOUNDS 🎵 =================
    A teeny music box: every sound is sung by the browser itself,
@@ -896,7 +896,7 @@ function checkTyped(t){
 function win(t){
   logAttempt(t.id, true, false, wrongTries + 1);
   levelStars++;
-  const earned = helped ? COINS_HELPED : (hinted ? 3 : COINS_RIGHT);
+  const earned = helped ? COINS_HELPED : (hinted ? 1 : COINS_RIGHT);
   state.coins += earned; save();
   updateHUD();
   $("stars").textContent = "⭐".repeat(levelStars);
@@ -971,7 +971,7 @@ function openChest(){
   SFX.chest();
   confetti();
 
-  const coins = 8 + 4 * levelStars;
+  const coins = 5 + levelStars;   // leaner chest — treasures should be EARNED!
   state.coins += coins;
 
   // a surprise present (a cute basic) flies to the post office 📮 (6 pigeonholes!)
