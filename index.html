@@ -606,8 +606,8 @@ function kidArt(k){
 function kidById(id){ return KIDS.find(k => k.id === id) || KIDS[0]; }
 
 const QUESTIONS_PER_LEVEL = 10;  // a proper quest at every shop! (Sunny's balance patch)
-const COINS_RIGHT = 2;       // right answer all by yourself
-const COINS_HELPED = 1;      // right after "Show me" — still worth something!
+const COINS_RIGHT = 1;       // coins are treasure now — one per answer, ~10 per quest
+const COINS_HELPED = 0;      // "Show me" keeps the kindness, not the coin
 
 /* ================= SOUNDS 🎵 =================
    A teeny music box: every sound is sung by the browser itself,
@@ -896,7 +896,7 @@ function checkTyped(t){
 function win(t){
   logAttempt(t.id, true, false, wrongTries + 1);
   levelStars++;
-  const earned = helped ? COINS_HELPED : (hinted ? 1 : COINS_RIGHT);
+  const earned = helped ? COINS_HELPED : COINS_RIGHT;   // hints are free — Sunny's rule
   state.coins += earned; save();
   updateHUD();
   $("stars").textContent = "⭐".repeat(levelStars);
@@ -925,10 +925,10 @@ function revealHelp(t){
 // winning after "Show me" — kinder, smaller reward, no star
 function win2(t){
   logAttempt(t.id, false, true, wrongTries);
-  SFX.coin();
+  SFX.pop();
   state.coins += COINS_HELPED; save(); updateHUD();
   const f = $("feedback"); f.className = "feedback good";
-  f.textContent = "Now you know it! 💛  +" + COINS_HELPED + " 🪙";
+  f.textContent = "Now you know it! 💛" + (COINS_HELPED > 0 ? "  +" + COINS_HELPED + " 🪙" : "");
   addNext();
 }
 
@@ -971,7 +971,7 @@ function openChest(){
   SFX.chest();
   confetti();
 
-  const coins = 5 + levelStars;   // leaner chest — treasures should be EARNED!
+  const coins = levelStars >= 8 ? 3 : 1;   // a tiny sparkle on top — treasures are EARNED!
   state.coins += coins;
 
   // a surprise present (a cute basic) flies to the post office 📮 (6 pigeonholes!)
