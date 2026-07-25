@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-25",
   "for": "word-quest",
-  "batch": "vocab-public-v2",
+  "batch": "vocab-public-v3",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
@@ -12,8 +12,8 @@
       "prompt": "Which word means 'to waste money or time when you really shouldn't'?",
       "options": [
         "squander",
-        "hoard",
         "rationalise",
+        "hoard",
         "convey"
       ],
       "answer": "squander",
@@ -26,9 +26,9 @@
       "difficulty": 2,
       "prompt": "Which word means 'to tempt someone with something lovely'?",
       "options": [
-        "entice",
-        "hinder",
         "offend",
+        "hinder",
+        "entice",
         "endure"
       ],
       "answer": "entice",
@@ -41,10 +41,10 @@
       "difficulty": 2,
       "prompt": "Which word means 'to officially say NO to a plan'?",
       "options": [
-        "veto",
-        "permit",
         "propose",
-        "accrue"
+        "permit",
+        "accrue",
+        "veto"
       ],
       "answer": "veto",
       "teach": "'Permit' means allow — veto is its bossy opposite: one powerful NO that blocks the plan."
@@ -73,8 +73,8 @@
       "options": [
         "horde",
         "morsel",
-        "sliver",
-        "hush"
+        "hush",
+        "sliver"
       ],
       "answer": "horde",
       "teach": "A horde of fans mobbed the stage! (Sneaky cousin: 'hoard' with an A is treasure you keep.)"
@@ -86,10 +86,10 @@
       "difficulty": 2,
       "prompt": "The moon grew smaller every night — it had started to ___.",
       "options": [
-        "wane",
-        "wax",
         "swell",
-        "enlarge"
+        "enlarge",
+        "wane",
+        "wax"
       ],
       "answer": "wane",
       "teach": "Waxing adds light, waning takes it away — like a candle slowly going out."
@@ -101,10 +101,10 @@
       "difficulty": 2,
       "prompt": "Which word means 'to keep going through something hard without giving up'?",
       "options": [
-        "endure",
+        "blither",
         "dawdle",
-        "vanish",
-        "blither"
+        "endure",
+        "vanish"
       ],
       "answer": "endure",
       "teach": "Explorers endure freezing nights — they grit their teeth and carry on. You endure a very long queue!"
@@ -117,8 +117,8 @@
       "prompt": "Which word means 'looking down and feeling gloomy'?",
       "options": [
         "downcast",
-        "jaunty",
         "valiant",
+        "jaunty",
         "astute"
       ],
       "answer": "downcast",
@@ -131,9 +131,9 @@
       "difficulty": 2,
       "prompt": "Which word means 'to get in the way and slow someone down'?",
       "options": [
-        "hinder",
         "assist",
         "entice",
+        "hinder",
         "adhere"
       ],
       "answer": "hinder",
@@ -147,9 +147,9 @@
       "prompt": "Which word means 'to run with quick little steps, like a squirrel'?",
       "options": [
         "scamper",
+        "slump",
         "trudge",
-        "loiter",
-        "slump"
+        "loiter"
       ],
       "answer": "scamper",
       "teach": "Squirrels scamper, tired hikers trudge. The word sounds as quick as the feet!"
@@ -162,9 +162,9 @@
       "prompt": "Which word means 'happening once every year'?",
       "options": [
         "annual",
-        "hourly",
         "constant",
-        "sudden"
+        "sudden",
+        "hourly"
       ],
       "answer": "annual",
       "teach": "Your birthday is annual — once a year ('annus' is Latin for year, like in 'anniversary')."
@@ -177,9 +177,9 @@
       "prompt": "Which word means 'a tiny flying insect that loves to bite on summer evenings'?",
       "options": [
         "midge",
-        "drake",
+        "ermine",
         "larva",
-        "ermine"
+        "drake"
       ],
       "answer": "midge",
       "teach": "Midges are the itchy dots of summer. (A larva is a baby insect, a drake is a boy duck, an ermine is a stoat — collect all four!)"
@@ -191,10 +191,10 @@
       "difficulty": 3,
       "prompt": "Word detective! Which ONE word fits BOTH clues: 'a harbour for ships' AND 'the left side of a boat'?",
       "options": [
-        "port",
-        "dock",
         "deck",
-        "bay"
+        "port",
+        "bay",
+        "dock"
       ],
       "answer": "port",
       "teach": "Port is the harbour AND the boat's left side. One word, two jobs — English loves a doubler."
@@ -206,8 +206,8 @@
       "difficulty": 3,
       "prompt": "Word detective! Which ONE word fits BOTH clues: 'a long story book' AND 'completely new and original'?",
       "options": [
-        "novel",
         "ancient",
+        "novel",
         "comic",
         "sequel"
       ],
@@ -222,9 +222,9 @@
       "prompt": "A 'plight' is...",
       "options": [
         "a difficult situation",
-        "a bright light",
+        "a kind of dance",
         "a small bird",
-        "a kind of dance"
+        "a bright light"
       ],
       "answer": "a difficult situation",
       "teach": "The knight rescued the villagers from their plight — their sticky situation."
@@ -236,8 +236,8 @@
       "difficulty": 2,
       "prompt": "Someone 'nimble' is...",
       "options": [
-        "quick and light on their feet",
         "very sleepy",
+        "quick and light on their feet",
         "extremely loud",
         "always hungry"
       ],
@@ -251,10 +251,10 @@
       "difficulty": 3,
       "prompt": "A 'cryptic' message is...",
       "options": [
-        "one with a hidden meaning",
-        "one written in capitals",
+        "one that is very long",
         "one sent by post",
-        "one that is very long"
+        "one written in capitals",
+        "one with a hidden meaning"
       ],
       "answer": "one with a hidden meaning",
       "teach": "Cryptic = puzzling, hidden. To decipher a cryptic note is to crack its code — detective work!"
@@ -266,10 +266,10 @@
       "difficulty": 1,
       "prompt": "'Vast' means...",
       "options": [
-        "absolutely huge",
         "very fast",
-        "quite empty",
-        "rather old"
+        "absolutely huge",
+        "rather old",
+        "quite empty"
       ],
       "answer": "absolutely huge",
       "teach": "The Sahara is vast, space is vaster. Huge, immense, enormous — vast's word family."
@@ -282,9 +282,9 @@
       "prompt": "Your 'visage' is your...",
       "options": [
         "face",
-        "voice",
         "shadow",
-        "signature"
+        "signature",
+        "voice"
       ],
       "answer": "face",
       "teach": "A knight's grim visage = his stern face. Fancy word, simple meaning — examiners love it."
@@ -296,10 +296,10 @@
       "difficulty": 2,
       "prompt": "The kitten was so ___ that it crept along the fence without a single wobble.",
       "options": [
-        "nimble",
-        "cumbersome",
         "hoarse",
-        "barren"
+        "barren",
+        "cumbersome",
+        "nimble"
       ],
       "answer": "nimble",
       "teach": "Nimble = light and quick. Cumbersome is the clumsy opposite — imagine a piano on that fence."
@@ -311,10 +311,10 @@
       "difficulty": 2,
       "prompt": "The sky turned a brilliant ___ over the summer sea.",
       "options": [
-        "azure",
         "sallow",
-        "lank",
-        "taut"
+        "azure",
+        "taut",
+        "lank"
       ],
       "answer": "azure",
       "teach": "Azure = bright sky-blue. A painter's word — it makes a sentence glow."
@@ -341,10 +341,10 @@
       "difficulty": 1,
       "prompt": "She was so ___ that she practised every single day until the trick worked.",
       "options": [
-        "persistent",
-        "peculiar",
         "placid",
-        "parched"
+        "parched",
+        "persistent",
+        "peculiar"
       ],
       "answer": "persistent",
       "teach": "Persistent = keeping at it, not giving up. The superpower behind every skill you've ever learned."
@@ -356,10 +356,10 @@
       "difficulty": 2,
       "prompt": "Three of these pull you closer. Which one pushes you away?",
       "options": [
-        "entice",
         "tempt",
+        "deter",
         "attract",
-        "deter"
+        "entice"
       ],
       "answer": "deter",
       "teach": "Entice, tempt and attract are magnets — deter is the force field that stops you."
@@ -386,9 +386,9 @@
       "difficulty": 2,
       "prompt": "Which word is the odd one out?",
       "options": [
-        "cease",
         "halt",
         "stop",
+        "cease",
         "commence"
       ],
       "answer": "commence",
@@ -401,10 +401,10 @@
       "difficulty": 2,
       "prompt": "If you 'smell a rat', you...",
       "options": [
-        "suspect something is wrong",
         "need to clean your room",
-        "are very hungry",
-        "have a cold"
+        "suspect something is wrong",
+        "have a cold",
+        "are very hungry"
       ],
       "answer": "suspect something is wrong",
       "teach": "No actual rats involved! Idioms mean more than their words — this one means 'something fishy is going on'. (Also fishy! English, honestly.)"
@@ -416,10 +416,10 @@
       "difficulty": 2,
       "prompt": "Someone 'sitting on the fence' is...",
       "options": [
-        "avoiding making a decision",
+        "taking a rest",
         "doing a balancing trick",
         "spying on neighbours",
-        "taking a rest"
+        "avoiding making a decision"
       ],
       "answer": "avoiding making a decision",
       "teach": "Can't pick a side? You're on the fence — one leg each way, deciding nothing."
