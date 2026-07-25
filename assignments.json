@@ -1,174 +1,9 @@
 {
   "generated_at": "2026-07-25",
   "for": "word-quest",
-  "batch": "vocab-public-v3",
+  "batch": "vocab-public-v4",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
-    {
-      "id": "v001",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'to waste money or time when you really shouldn't'?",
-      "options": [
-        "squander",
-        "rationalise",
-        "hoard",
-        "convey"
-      ],
-      "answer": "squander",
-      "teach": "To squander pocket money is to blow it all in one go — the show-off opposite of saving."
-    },
-    {
-      "id": "v002",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'to tempt someone with something lovely'?",
-      "options": [
-        "offend",
-        "hinder",
-        "entice",
-        "endure"
-      ],
-      "answer": "entice",
-      "teach": "The smell of warm cookies can entice anyone into the kitchen. Tempt, attract, entice — all magnets!"
-    },
-    {
-      "id": "v003",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'to officially say NO to a plan'?",
-      "options": [
-        "propose",
-        "permit",
-        "accrue",
-        "veto"
-      ],
-      "answer": "veto",
-      "teach": "'Permit' means allow — veto is its bossy opposite: one powerful NO that blocks the plan."
-    },
-    {
-      "id": "v004",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 1,
-      "prompt": "Which word means 'to stop completely'?",
-      "options": [
-        "cease",
-        "commence",
-        "linger",
-        "romp"
-      ],
-      "answer": "cease",
-      "teach": "When rain ceases, it stops. 'Cease' is a posh full stop — and 'commence' kicks things off."
-    },
-    {
-      "id": "v005",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'a huge, noisy crowd'?",
-      "options": [
-        "horde",
-        "morsel",
-        "hush",
-        "sliver"
-      ],
-      "answer": "horde",
-      "teach": "A horde of fans mobbed the stage! (Sneaky cousin: 'hoard' with an A is treasure you keep.)"
-    },
-    {
-      "id": "v006",
-      "type": "fill_the_gap",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "The moon grew smaller every night — it had started to ___.",
-      "options": [
-        "swell",
-        "enlarge",
-        "wane",
-        "wax"
-      ],
-      "answer": "wane",
-      "teach": "Waxing adds light, waning takes it away — like a candle slowly going out."
-    },
-    {
-      "id": "v007",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'to keep going through something hard without giving up'?",
-      "options": [
-        "blither",
-        "dawdle",
-        "endure",
-        "vanish"
-      ],
-      "answer": "endure",
-      "teach": "Explorers endure freezing nights — they grit their teeth and carry on. You endure a very long queue!"
-    },
-    {
-      "id": "v008",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'looking down and feeling gloomy'?",
-      "options": [
-        "downcast",
-        "valiant",
-        "jaunty",
-        "astute"
-      ],
-      "answer": "downcast",
-      "teach": "Downcast eyes stare at shoes. 'Jaunty' is the happy opposite — chin up, cap at an angle!"
-    },
-    {
-      "id": "v009",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'to get in the way and slow someone down'?",
-      "options": [
-        "assist",
-        "entice",
-        "hinder",
-        "adhere"
-      ],
-      "answer": "hinder",
-      "teach": "A pebble in your shoe hinders a runner. Its rhyme-twin 'hamper' means exactly the same!"
-    },
-    {
-      "id": "v010",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 1,
-      "prompt": "Which word means 'to run with quick little steps, like a squirrel'?",
-      "options": [
-        "scamper",
-        "slump",
-        "trudge",
-        "loiter"
-      ],
-      "answer": "scamper",
-      "teach": "Squirrels scamper, tired hikers trudge. The word sounds as quick as the feet!"
-    },
-    {
-      "id": "v011",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 1,
-      "prompt": "Which word means 'happening once every year'?",
-      "options": [
-        "annual",
-        "constant",
-        "sudden",
-        "hourly"
-      ],
-      "answer": "annual",
-      "teach": "Your birthday is annual — once a year ('annus' is Latin for year, like in 'anniversary')."
-    },
     {
       "id": "v012",
       "type": "choose_best_word",
@@ -230,126 +65,6 @@
       "teach": "The knight rescued the villagers from their plight — their sticky situation."
     },
     {
-      "id": "v016",
-      "type": "choose_best_word",
-      "target_skill": "synonyms",
-      "difficulty": 2,
-      "prompt": "Someone 'nimble' is...",
-      "options": [
-        "very sleepy",
-        "quick and light on their feet",
-        "extremely loud",
-        "always hungry"
-      ],
-      "answer": "quick and light on their feet",
-      "teach": "Jack be nimble, Jack be quick! Gymnasts and squirrels: nimble."
-    },
-    {
-      "id": "v017",
-      "type": "choose_best_word",
-      "target_skill": "synonyms",
-      "difficulty": 3,
-      "prompt": "A 'cryptic' message is...",
-      "options": [
-        "one that is very long",
-        "one sent by post",
-        "one written in capitals",
-        "one with a hidden meaning"
-      ],
-      "answer": "one with a hidden meaning",
-      "teach": "Cryptic = puzzling, hidden. To decipher a cryptic note is to crack its code — detective work!"
-    },
-    {
-      "id": "v018",
-      "type": "choose_best_word",
-      "target_skill": "synonyms",
-      "difficulty": 1,
-      "prompt": "'Vast' means...",
-      "options": [
-        "very fast",
-        "absolutely huge",
-        "rather old",
-        "quite empty"
-      ],
-      "answer": "absolutely huge",
-      "teach": "The Sahara is vast, space is vaster. Huge, immense, enormous — vast's word family."
-    },
-    {
-      "id": "v019",
-      "type": "choose_best_word",
-      "target_skill": "synonyms",
-      "difficulty": 3,
-      "prompt": "Your 'visage' is your...",
-      "options": [
-        "face",
-        "shadow",
-        "signature",
-        "voice"
-      ],
-      "answer": "face",
-      "teach": "A knight's grim visage = his stern face. Fancy word, simple meaning — examiners love it."
-    },
-    {
-      "id": "v020",
-      "type": "fill_the_gap",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "The kitten was so ___ that it crept along the fence without a single wobble.",
-      "options": [
-        "hoarse",
-        "barren",
-        "cumbersome",
-        "nimble"
-      ],
-      "answer": "nimble",
-      "teach": "Nimble = light and quick. Cumbersome is the clumsy opposite — imagine a piano on that fence."
-    },
-    {
-      "id": "v021",
-      "type": "fill_the_gap",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "The sky turned a brilliant ___ over the summer sea.",
-      "options": [
-        "sallow",
-        "azure",
-        "taut",
-        "lank"
-      ],
-      "answer": "azure",
-      "teach": "Azure = bright sky-blue. A painter's word — it makes a sentence glow."
-    },
-    {
-      "id": "v022",
-      "type": "fill_the_gap",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "The old oak's ___ branches twisted like a witch's fingers.",
-      "options": [
-        "gnarled",
-        "gleaming",
-        "tropical",
-        "legible"
-      ],
-      "answer": "gnarled",
-      "teach": "Gnarled = twisted and knobbly. Perfect for old trees, old roots, and wizard's hands."
-    },
-    {
-      "id": "v023",
-      "type": "fill_the_gap",
-      "target_skill": "meaning_in_context",
-      "difficulty": 1,
-      "prompt": "She was so ___ that she practised every single day until the trick worked.",
-      "options": [
-        "placid",
-        "parched",
-        "persistent",
-        "peculiar"
-      ],
-      "answer": "persistent",
-      "teach": "Persistent = keeping at it, not giving up. The superpower behind every skill you've ever learned."
-    },
-    {
       "id": "v024",
       "type": "odd_one_out",
       "target_skill": "word_relationships",
@@ -365,75 +80,6 @@
       "teach": "Entice, tempt and attract are magnets — deter is the force field that stops you."
     },
     {
-      "id": "v025",
-      "type": "odd_one_out",
-      "target_skill": "word_relationships",
-      "difficulty": 1,
-      "prompt": "Which word is the odd one out?",
-      "options": [
-        "vast",
-        "enormous",
-        "immense",
-        "dainty"
-      ],
-      "answer": "dainty",
-      "teach": "Vast, enormous and immense are giants — dainty is small and delicate, like a fairy's teacup."
-    },
-    {
-      "id": "v026",
-      "type": "odd_one_out",
-      "target_skill": "word_relationships",
-      "difficulty": 2,
-      "prompt": "Which word is the odd one out?",
-      "options": [
-        "halt",
-        "stop",
-        "cease",
-        "commence"
-      ],
-      "answer": "commence",
-      "teach": "Cease, halt and stop all slam the brakes — commence starts the engine!"
-    },
-    {
-      "id": "v027",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "If you 'smell a rat', you...",
-      "options": [
-        "need to clean your room",
-        "suspect something is wrong",
-        "have a cold",
-        "are very hungry"
-      ],
-      "answer": "suspect something is wrong",
-      "teach": "No actual rats involved! Idioms mean more than their words — this one means 'something fishy is going on'. (Also fishy! English, honestly.)"
-    },
-    {
-      "id": "v028",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Someone 'sitting on the fence' is...",
-      "options": [
-        "taking a rest",
-        "doing a balancing trick",
-        "spying on neighbours",
-        "avoiding making a decision"
-      ],
-      "answer": "avoiding making a decision",
-      "teach": "Can't pick a side? You're on the fence — one leg each way, deciding nothing."
-    },
-    {
-      "id": "v029",
-      "type": "fix_the_sentence",
-      "target_skill": "homophones",
-      "difficulty": 2,
-      "prompt": "Fix this sentence: I couldn't bare the freezing wind.",
-      "answer": "I couldn't bear the freezing wind.",
-      "teach": "To bear = to put up with (like a tough old bear). Bare = uncovered — bare feet in the snow, brrr!"
-    },
-    {
       "id": "v030",
       "type": "fix_the_sentence",
       "target_skill": "confusable_words",
@@ -443,22 +89,199 @@
       "teach": "Lose = can't find it / don't win. Loose = wobbly-tooth wobbly. One O of difference!"
     },
     {
-      "id": "v031",
+      "id": "v034",
       "type": "fix_the_sentence",
-      "target_skill": "homophones",
+      "target_skill": "commas",
       "difficulty": 2,
-      "prompt": "Fix this sentence: Your going to love this castle.",
-      "answer": "You're going to love this castle.",
-      "teach": "You're = you are (the apostrophe hides the missing A). Your = belonging to you, as in your crown."
+      "prompt": "Fix this sentence: The robotic claw, picks up the toys.",
+      "answer": "The robotic claw picks up the toys.",
+      "teach": "That comma was splitting the doer from the doing! The who and the what-they-do stay glued together."
     },
     {
-      "id": "v032",
+      "id": "v035",
       "type": "fix_the_sentence",
+      "target_skill": "commas",
+      "difficulty": 3,
+      "prompt": "Fix this sentence: Although, the machine is clever, it needs charging.",
+      "answer": "Although the machine is clever, it needs charging.",
+      "teach": "'However' takes a comma straight after it — but 'although' doesn't. It hugs its whole clause first, THEN comes the comma."
+    },
+    {
+      "id": "v036",
+      "type": "choose_best_word",
+      "target_skill": "suffix_prefix_rules",
+      "difficulty": 2,
+      "prompt": "Which spelling is correct?",
+      "options": [
+        "instantley",
+        "instently",
+        "instantly",
+        "instintly"
+      ],
+      "answer": "instantly",
+      "teach": "Instant → instantly. The -ant family: instant, brilliant, elegant — all with A."
+    },
+    {
+      "id": "v037",
+      "type": "choose_best_word",
+      "target_skill": "suffix_prefix_rules",
+      "difficulty": 2,
+      "prompt": "Which spelling is correct?",
+      "options": [
+        "conveniant",
+        "convenient",
+        "convienient",
+        "convenent"
+      ],
+      "answer": "convenient",
+      "teach": "ConveniENT — the -ent family: convenient, patient, silent. (Tricky, because 'instant' takes A!)"
+    },
+    {
+      "id": "v038",
+      "type": "fix_the_sentence",
+      "target_skill": "apostrophes",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: The dragons wings sparkled in the sun.",
+      "answer": "The dragon's wings sparkled in the sun.",
+      "teach": "The wings belong to the dragon — belonging gets an apostrophe: dragon's."
+    },
+    {
+      "id": "v039",
+      "type": "fix_the_sentence",
+      "target_skill": "apostrophes",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: I think somethings wrong with the robot.",
+      "answer": "I think something's wrong with the robot.",
+      "teach": "Something's = something IS. The apostrophe stands in for the missing i."
+    },
+    {
+      "id": "v040",
+      "type": "fill_the_gap",
+      "target_skill": "homophones",
+      "difficulty": 2,
+      "prompt": "The bridge was made of shiny ___.",
+      "options": [
+        "steel",
+        "steele",
+        "stele",
+        "steal"
+      ],
+      "answer": "steel",
+      "teach": "Steel = the metal. Steal = what a sneaky magpie does with your sandwich."
+    },
+    {
+      "id": "v041",
+      "type": "fill_the_gap",
+      "target_skill": "homophones",
+      "difficulty": 1,
+      "prompt": "Please take your muddy boots ___ the carpet!",
+      "options": [
+        "offe",
+        "ov",
+        "of",
+        "off"
+      ],
+      "answer": "off",
+      "teach": "Off = away from (two f's push things away). Of = belonging, like 'a cup of tea'."
+    },
+    {
+      "id": "v042",
+      "type": "choose_best_word",
       "target_skill": "homophones",
       "difficulty": 3,
-      "prompt": "Fix this sentence: The chest was buried to deep too dig up.",
-      "answer": "The chest was buried too deep to dig up.",
-      "teach": "Too = 'more than enough' (too deep, too late). To = direction or a to-do. This one had them swapped!"
+      "prompt": "Pens, pencils and paper are kept in the ___ cupboard. Which spelling?",
+      "options": [
+        "stationairy",
+        "stationery",
+        "stationry",
+        "stationary"
+      ],
+      "answer": "stationery",
+      "teach": "StationEry = pEns and Envelopes. StationAry = stAnding still, like a parked car. E for equipment!"
+    },
+    {
+      "id": "v043",
+      "type": "fix_the_sentence",
+      "target_skill": "high_freq_misspellings",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: We play games together everynight.",
+      "answer": "We play games together every night.",
+      "teach": "Every night, every letter, every moment — 'every' likes its own space. Two words, always!"
+    },
+    {
+      "id": "v044",
+      "type": "choose_best_word",
+      "target_skill": "missing_words",
+      "difficulty": 3,
+      "prompt": "Sentence detective! Which of these is a COMPLETE sentence?",
+      "options": [
+        "The alarm will automatically.",
+        "The alarm will sound if the machine overheats.",
+        "Sounding the alarm very loudly.",
+        "If the alarm goes off."
+      ],
+      "answer": "The alarm will sound if the machine overheats.",
+      "teach": "A complete sentence needs a doer AND a full doing. 'The alarm will automatically…' — will automatically WHAT? Always finish the verb!"
+    },
+    {
+      "id": "v045",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Maths corner! Which angle is bigger than a right angle but smaller than a straight line?",
+      "options": [
+        "obtuse",
+        "right",
+        "acute",
+        "reflex"
+      ],
+      "answer": "obtuse",
+      "teach": "Obtuse = the wide, lazy armchair angle (between 90° and 180°). Acute is the cute little one under 90°."
+    },
+    {
+      "id": "v046",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Maths corner! In the fraction 3/4, what is the 4 called?",
+      "options": [
+        "numerator",
+        "divisor",
+        "denominator",
+        "multiplier"
+      ],
+      "answer": "denominator",
+      "teach": "Denominator = Down (both start with D!). The numerator is the number up top."
+    },
+    {
+      "id": "v047",
+      "type": "choose_best_word",
+      "target_skill": "high_freq_misspellings",
+      "difficulty": 3,
+      "prompt": "Which spelling is correct?",
+      "options": [
+        "mischevious",
+        "mischievious",
+        "mischevous",
+        "mischievous"
+      ],
+      "answer": "mischievous",
+      "teach": "Mis-CHIE-vous — a cheeky CHIEF is hiding inside it. (Official Year 5/6 tricky word!)"
+    },
+    {
+      "id": "v048",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Which word is the odd one out?",
+      "options": [
+        "drenched",
+        "soaked",
+        "parched",
+        "dripping"
+      ],
+      "answer": "parched",
+      "teach": "Drenched, soaked and dripping are soggy — parched means bone-dry and desperate for a drink!"
     }
   ]
 }

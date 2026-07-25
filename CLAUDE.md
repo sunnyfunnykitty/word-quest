@@ -80,6 +80,8 @@ screen time. Wholesome, fair, and proud-making. 🍓🧂
   updates itself. Do NOT route publishing to a grown-up or make her wait — Dad reviews the
   repo *afterwards* (post-hoc audit) instead of gating merges. If a `git push` approval
   prompt appears in-session, allowing it is fine.
+- **ALWAYS `git pull` main before you publish.** The Mac side also pushes here (word packs,
+  guide updates); publishing from a stale checkout can silently undo its work.
 - The grown-up side still owns: repo settings, the audits, and `assignments.json` (shipped
   separately by HQ — never modify it in your pushes). Boundaries unchanged: no personal or
   identifying info ever (the designer goes by **Sunny** here), everything wholesome and
@@ -107,5 +109,5 @@ screen time. Wholesome, fair, and proud-making. 🍓🧂
 
 ## 🚀 How I publish (reminder card)
 
-Save on `main` → the play link updates in about a minute. That's the whole publish
-button. (Test first; the live game never breaks.)
+Pull `main` first → save on `main` → the play link updates in about a minute. That's the
+whole publish button. (Test first; the live game never breaks.)
