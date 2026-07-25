@@ -1,0 +1,472 @@
+{
+  "generated_at": "2026-07-25",
+  "for": "word-quest",
+  "batch": "vocab-public-v1",
+  "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
+  "tasks": [
+    {
+      "id": "v001",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to waste money or time when you really shouldn't'?",
+      "options": [
+        "squander",
+        "hoard",
+        "rationalise",
+        "convey"
+      ],
+      "answer": "squander",
+      "teach": "To squander pocket money is to blow it all in one go — the show-off opposite of saving."
+    },
+    {
+      "id": "v002",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to tempt someone with something lovely'?",
+      "options": [
+        "entice",
+        "hinder",
+        "offend",
+        "endure"
+      ],
+      "answer": "entice",
+      "teach": "The smell of warm cookies can entice anyone into the kitchen. Tempt, attract, entice — all magnets!"
+    },
+    {
+      "id": "v003",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to officially say NO to a plan'?",
+      "options": [
+        "veto",
+        "permit",
+        "propose",
+        "accrue"
+      ],
+      "answer": "veto",
+      "teach": "'Permit' means allow — veto is its bossy opposite: one powerful NO that blocks the plan."
+    },
+    {
+      "id": "v004",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "Which word means 'to stop completely'?",
+      "options": [
+        "cease",
+        "commence",
+        "linger",
+        "romp"
+      ],
+      "answer": "cease",
+      "teach": "When rain ceases, it stops. 'Cease' is a posh full stop — and 'commence' kicks things off."
+    },
+    {
+      "id": "v005",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'a huge, noisy crowd'?",
+      "options": [
+        "horde",
+        "morsel",
+        "sliver",
+        "hush"
+      ],
+      "answer": "horde",
+      "teach": "A horde of fans mobbed the stage! (Sneaky cousin: 'hoard' with an A is treasure you keep.)"
+    },
+    {
+      "id": "v006",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The moon grew smaller every night — it had started to ___.",
+      "options": [
+        "wane",
+        "wax",
+        "swell",
+        "enlarge"
+      ],
+      "answer": "wane",
+      "teach": "Waxing adds light, waning takes it away — like a candle slowly going out."
+    },
+    {
+      "id": "v007",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to keep going through something hard without giving up'?",
+      "options": [
+        "endure",
+        "dawdle",
+        "vanish",
+        "blither"
+      ],
+      "answer": "endure",
+      "teach": "Explorers endure freezing nights — they grit their teeth and carry on. You endure a very long queue!"
+    },
+    {
+      "id": "v008",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'looking down and feeling gloomy'?",
+      "options": [
+        "downcast",
+        "jaunty",
+        "valiant",
+        "astute"
+      ],
+      "answer": "downcast",
+      "teach": "Downcast eyes stare at shoes. 'Jaunty' is the happy opposite — chin up, cap at an angle!"
+    },
+    {
+      "id": "v009",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to get in the way and slow someone down'?",
+      "options": [
+        "hinder",
+        "assist",
+        "entice",
+        "adhere"
+      ],
+      "answer": "hinder",
+      "teach": "A pebble in your shoe hinders a runner. Its rhyme-twin 'hamper' means exactly the same!"
+    },
+    {
+      "id": "v010",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "Which word means 'to run with quick little steps, like a squirrel'?",
+      "options": [
+        "scamper",
+        "trudge",
+        "loiter",
+        "slump"
+      ],
+      "answer": "scamper",
+      "teach": "Squirrels scamper, tired hikers trudge. The word sounds as quick as the feet!"
+    },
+    {
+      "id": "v011",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "Which word means 'happening once every year'?",
+      "options": [
+        "annual",
+        "hourly",
+        "constant",
+        "sudden"
+      ],
+      "answer": "annual",
+      "teach": "Your birthday is annual — once a year ('annus' is Latin for year, like in 'anniversary')."
+    },
+    {
+      "id": "v012",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'a tiny flying insect that loves to bite on summer evenings'?",
+      "options": [
+        "midge",
+        "drake",
+        "larva",
+        "ermine"
+      ],
+      "answer": "midge",
+      "teach": "Midges are the itchy dots of summer. (A larva is a baby insect, a drake is a boy duck, an ermine is a stoat — collect all four!)"
+    },
+    {
+      "id": "v013",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Word detective! Which ONE word fits BOTH clues: 'a harbour for ships' AND 'the left side of a boat'?",
+      "options": [
+        "port",
+        "dock",
+        "deck",
+        "bay"
+      ],
+      "answer": "port",
+      "teach": "Port is the harbour AND the boat's left side. One word, two jobs — English loves a doubler."
+    },
+    {
+      "id": "v014",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Word detective! Which ONE word fits BOTH clues: 'a long story book' AND 'completely new and original'?",
+      "options": [
+        "novel",
+        "ancient",
+        "comic",
+        "sequel"
+      ],
+      "answer": "novel",
+      "teach": "You can read a novel, and invent a novel idea — same word, two meanings."
+    },
+    {
+      "id": "v015",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 2,
+      "prompt": "A 'plight' is...",
+      "options": [
+        "a difficult situation",
+        "a bright light",
+        "a small bird",
+        "a kind of dance"
+      ],
+      "answer": "a difficult situation",
+      "teach": "The knight rescued the villagers from their plight — their sticky situation."
+    },
+    {
+      "id": "v016",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 2,
+      "prompt": "Someone 'nimble' is...",
+      "options": [
+        "quick and light on their feet",
+        "very sleepy",
+        "extremely loud",
+        "always hungry"
+      ],
+      "answer": "quick and light on their feet",
+      "teach": "Jack be nimble, Jack be quick! Gymnasts and squirrels: nimble."
+    },
+    {
+      "id": "v017",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 3,
+      "prompt": "A 'cryptic' message is...",
+      "options": [
+        "one with a hidden meaning",
+        "one written in capitals",
+        "one sent by post",
+        "one that is very long"
+      ],
+      "answer": "one with a hidden meaning",
+      "teach": "Cryptic = puzzling, hidden. To decipher a cryptic note is to crack its code — detective work!"
+    },
+    {
+      "id": "v018",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 1,
+      "prompt": "'Vast' means...",
+      "options": [
+        "absolutely huge",
+        "very fast",
+        "quite empty",
+        "rather old"
+      ],
+      "answer": "absolutely huge",
+      "teach": "The Sahara is vast, space is vaster. Huge, immense, enormous — vast's word family."
+    },
+    {
+      "id": "v019",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 3,
+      "prompt": "Your 'visage' is your...",
+      "options": [
+        "face",
+        "voice",
+        "shadow",
+        "signature"
+      ],
+      "answer": "face",
+      "teach": "A knight's grim visage = his stern face. Fancy word, simple meaning — examiners love it."
+    },
+    {
+      "id": "v020",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The kitten was so ___ that it crept along the fence without a single wobble.",
+      "options": [
+        "nimble",
+        "cumbersome",
+        "hoarse",
+        "barren"
+      ],
+      "answer": "nimble",
+      "teach": "Nimble = light and quick. Cumbersome is the clumsy opposite — imagine a piano on that fence."
+    },
+    {
+      "id": "v021",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The sky turned a brilliant ___ over the summer sea.",
+      "options": [
+        "azure",
+        "sallow",
+        "lank",
+        "taut"
+      ],
+      "answer": "azure",
+      "teach": "Azure = bright sky-blue. A painter's word — it makes a sentence glow."
+    },
+    {
+      "id": "v022",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The old oak's ___ branches twisted like a witch's fingers.",
+      "options": [
+        "gnarled",
+        "gleaming",
+        "tropical",
+        "legible"
+      ],
+      "answer": "gnarled",
+      "teach": "Gnarled = twisted and knobbly. Perfect for old trees, old roots, and wizard's hands."
+    },
+    {
+      "id": "v023",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "She was so ___ that she practised every single day until the trick worked.",
+      "options": [
+        "persistent",
+        "peculiar",
+        "placid",
+        "parched"
+      ],
+      "answer": "persistent",
+      "teach": "Persistent = keeping at it, not giving up. The superpower behind every skill you've ever learned."
+    },
+    {
+      "id": "v024",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Three of these pull you closer. Which one pushes you away?",
+      "options": [
+        "entice",
+        "tempt",
+        "attract",
+        "deter"
+      ],
+      "answer": "deter",
+      "teach": "Entice, tempt and attract are magnets — deter is the force field that stops you."
+    },
+    {
+      "id": "v025",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 1,
+      "prompt": "Which word is the odd one out?",
+      "options": [
+        "vast",
+        "enormous",
+        "immense",
+        "dainty"
+      ],
+      "answer": "dainty",
+      "teach": "Vast, enormous and immense are giants — dainty is small and delicate, like a fairy's teacup."
+    },
+    {
+      "id": "v026",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Which word is the odd one out?",
+      "options": [
+        "cease",
+        "halt",
+        "stop",
+        "commence"
+      ],
+      "answer": "commence",
+      "teach": "Cease, halt and stop all slam the brakes — commence starts the engine!"
+    },
+    {
+      "id": "v027",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "If you 'smell a rat', you...",
+      "options": [
+        "suspect something is wrong",
+        "need to clean your room",
+        "are very hungry",
+        "have a cold"
+      ],
+      "answer": "suspect something is wrong",
+      "teach": "No actual rats involved! Idioms mean more than their words — this one means 'something fishy is going on'. (Also fishy! English, honestly.)"
+    },
+    {
+      "id": "v028",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Someone 'sitting on the fence' is...",
+      "options": [
+        "avoiding making a decision",
+        "doing a balancing trick",
+        "spying on neighbours",
+        "taking a rest"
+      ],
+      "answer": "avoiding making a decision",
+      "teach": "Can't pick a side? You're on the fence — one leg each way, deciding nothing."
+    },
+    {
+      "id": "v029",
+      "type": "fix_the_sentence",
+      "target_skill": "homophones",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: The explorer couldn't bare the freezing wind.",
+      "answer": "The explorer couldn't bear the freezing wind.",
+      "teach": "To bear = to put up with (like a tough old bear). Bare = uncovered — bare feet in the snow, brrr!"
+    },
+    {
+      "id": "v030",
+      "type": "fix_the_sentence",
+      "target_skill": "confusable_words",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: Don't loose hope — the rescue ship is close!",
+      "answer": "Don't lose hope — the rescue ship is close!",
+      "teach": "Lose = can't find it / don't win. Loose = wobbly-tooth wobbly. One O of difference!"
+    },
+    {
+      "id": "v031",
+      "type": "fix_the_sentence",
+      "target_skill": "homophones",
+      "difficulty": 2,
+      "prompt": "Fix this sentence: Your going to love this ancient castle.",
+      "answer": "You're going to love this ancient castle.",
+      "teach": "You're = you are (the apostrophe hides the missing A). Your = belonging to you, as in your crown."
+    },
+    {
+      "id": "v032",
+      "type": "fix_the_sentence",
+      "target_skill": "homophones",
+      "difficulty": 3,
+      "prompt": "Fix this sentence: The treasure was buried to deep too dig up.",
+      "answer": "The treasure was buried too deep to dig up.",
+      "teach": "Too = 'more than enough' (too deep, too late). To = direction or a to-do. This one had them swapped!"
+    },
+    {
+      "id": "v033",
+      "type": "design_me",
+      "target_skill": "creativity",
+      "difficulty": 1,
+      "prompt": "Designer challenge: invent a Word Zoo! Every new word you beat becomes a creature you collect. What do they look like? Where do they live? You decide — sketch it, then build it!",
+      "teach": "Your game, your rules. (A 'menagerie' is a collection of animals — maybe your first exhibit?)"
+    }
+  ]
+}

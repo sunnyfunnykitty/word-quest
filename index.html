@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Word Quest ✨</title>
+<style>
+  /* ---- Plain, friendly starter. THIS IS SUNNY'S CANVAS to make fun & beautiful! ---- */
+  :root {
+    --pink:#ffd6e7; --pink-deep:#ff9ec4; --yellow:#fff3b0; --yellow-deep:#ffd95a;
+    --green:#d4f3c8; --green-deep:#8fd97a; --blue:#cfeffd; --blue-deep:#7fcef0;
+    --cream:#fff8ef; --ink:#6b5b73; --shadow:rgba(150,120,160,.25);
+    --font:"Chalkboard SE","Comic Sans MS","Baloo",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;min-height:100%;font-family:var(--font);color:var(--ink);}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;
+       background:linear-gradient(160deg,var(--pink),var(--yellow) 50%,var(--green));}
+  .card{width:100%;max-width:460px;background:var(--cream);border-radius:36px;padding:26px;
+        box-shadow:0 18px 40px var(--shadow),inset 0 0 0 6px #fff;text-align:center;}
+  h1{margin:0 0 2px;color:var(--pink-deep);text-shadow:2px 2px 0 #fff;font-size:30px;}
+  .sub{font-size:13px;opacity:.75;margin:0 0 14px;}
+  .progress{font-size:13px;opacity:.8;margin-bottom:6px;}
+  .stars{font-size:18px;margin-bottom:10px;min-height:22px;}
+  .skill{font-size:11px;color:var(--pink-deep);background:#fff0f6;border-radius:12px;
+         display:inline-block;padding:3px 10px;margin-bottom:10px;}
+  .prompt{font-size:20px;line-height:1.35;margin:6px 0 16px;}
+  .opts{display:grid;gap:10px;}
+  .opt{font-family:var(--font);font-size:18px;color:var(--ink);background:#fff;
+       border:3px solid #eee2d6;border-radius:18px;padding:14px;cursor:pointer;
+       transition:transform .08s,border-color .12s,background .12s;}
+  .opt:active{transform:scale(.97);}
+  .opt.right{background:var(--green);border-color:var(--green-deep);}
+  .opt.wrong{background:#ffe0e0;border-color:#ffb3b3;}
+  .inpwrap{display:flex;flex-direction:column;gap:10px;}
+  input[type=text]{font-family:var(--font);font-size:18px;text-align:center;color:var(--ink);
+       border:3px solid var(--pink-deep);border-radius:16px;padding:12px;outline:none;background:#fff;}
+  .btn{font-family:var(--font);border:none;cursor:pointer;border-radius:20px;padding:13px 20px;
+       font-size:18px;color:#fff;background:var(--green-deep);box-shadow:0 5px 0 rgba(0,0,0,.08);}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.08);}
+  .btn.soft{background:#fff;color:var(--ink);border:2px solid #e7ddd2;box-shadow:none;font-size:14px;padding:8px 14px;}
+  .feedback{min-height:26px;margin:14px 0 4px;font-size:16px;}
+  .feedback.good{color:var(--green-deep);}
+  .feedback.tryagain{color:var(--pink-deep);}
+  .teach{font-size:14px;opacity:.85;background:#fffdf3;border-radius:14px;padding:10px;margin-top:8px;}
+  .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px;}
+  .design{font-size:15px;background:#f3ecff;border:3px dashed #c79bf0;border-radius:18px;padding:18px;}
+  .hidden{display:none;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Word Quest ✨</h1>
+    <p class="sub">working title — Sunny can rename &amp; redesign everything! 🎨</p>
+
+    <div id="game">
+      <div class="progress" id="progress"></div>
+      <div class="stars" id="stars"></div>
+      <div class="skill" id="skill"></div>
+      <div class="prompt" id="prompt"></div>
+      <div id="answerArea"></div>
+      <div class="feedback" id="feedback"></div>
+      <div class="teach hidden" id="teach"></div>
+      <div class="row" id="controls"></div>
+    </div>
+
+    <div id="end" class="hidden">
+      <div class="prompt">🎉 You finished the Word Quest!</div>
+      <div class="stars" id="finalStars"></div>
+      <div class="row"><button class="btn" onclick="start()">Play again 🔁</button></div>
+    </div>
+  </div>
+
+<script>
+"use strict";
+
+// ---- Embedded sample tasks (fallback so it works by just opening the file). ----
+// When served next to a real assignments.json, that file is loaded instead.
+const EMBEDDED = {
+  tasks: [
+    {id:"s1",type:"choose_best_word",target_skill:"shades_of_meaning",prompt:"The castle was very old. Which word paints the strongest picture?",options:["old","ancient","used","late"],answer:"ancient",teach:"‘Ancient’ means very, very old — a stronger picture than plain ‘old’."},
+    {id:"s2",type:"fix_the_sentence",target_skill:"apostrophes",prompt:"Fix this sentence: The dog wagged it's tail.",answer:"The dog wagged its tail.",teach:"‘Its’ shows belonging. ‘It’s’ only ever means ‘it is’."},
+    {id:"s3",type:"odd_one_out",target_skill:"word_relationships",prompt:"Which word is the odd one out?",options:["apple","banana","carrot","grape"],answer:"carrot",teach:"Apple, banana and grape are fruits — a carrot is a vegetable."},
+    {id:"s4",type:"design_me",target_skill:"match_pairs",prompt:"A matching game could go here — for YOU to invent, Sunny! 🎨",teach:"You’re the designer! How should it look and feel?"}
+  ]
+};
+
+let TASKS = EMBEDDED.tasks;
+let i = 0, stars = 0, answered = false;
+
+const $ = (id) => document.getElementById(id);
+
+function norm(s){ return (s||"").toLowerCase().replace(/[.,!?;:]/g,"").replace(/\s+/g," ").trim(); }
+
+function start(){
+  i = 0; stars = 0;
+  $("end").classList.add("hidden");
+  $("game").classList.remove("hidden");
+  showTask();
+}
+
+function showTask(){
+  answered = false;
+  const t = TASKS[i];
+  $("progress").textContent = "Task " + (i+1) + " of " + TASKS.length;
+  $("stars").textContent = "⭐".repeat(stars);
+  $("skill").textContent = (t.target_skill || "").replace(/_/g," ");
+  $("prompt").textContent = t.prompt;
+  $("feedback").textContent = ""; $("feedback").className = "feedback";
+  $("teach").classList.add("hidden"); $("teach").textContent = t.teach || "";
+  $("controls").innerHTML = "";
+  const area = $("answerArea");
+  area.innerHTML = "";
+
+  if (t.type === "design_me") {
+    const d = document.createElement("div");
+    d.className = "design";
+    d.textContent = "💡 " + (t.teach || "Your idea goes here!");
+    area.appendChild(d);
+    addNext();
+    return;
+  }
+
+  if (Array.isArray(t.options) && t.options.length) {
+    const box = document.createElement("div");
+    box.className = "opts";
+    t.options.forEach((opt) => {
+      const b = document.createElement("button");
+      b.className = "opt";
+      b.textContent = opt;
+      b.onclick = () => pickOption(b, opt, t);
+      box.appendChild(b);
+    });
+    area.appendChild(box);
+  } else {
+    // typed answer (e.g. fix_the_sentence)
+    const wrap = document.createElement("div");
+    wrap.className = "inpwrap";
+    const inp = document.createElement("input");
+    inp.type = "text"; inp.id = "typed"; inp.placeholder = "Type your answer…";
+    inp.onkeydown = (e) => { if (e.key === "Enter") checkTyped(t); };
+    const btn = document.createElement("button");
+    btn.className = "btn"; btn.textContent = "Check ✅";
+    btn.onclick = () => checkTyped(t);
+    wrap.appendChild(inp); wrap.appendChild(btn);
+    area.appendChild(wrap);
+    setTimeout(() => inp.focus(), 60);
+  }
+}
+
+function pickOption(btn, opt, t){
+  if (answered) return;
+  if (opt === t.answer){
+    answered = true;
+    btn.classList.add("right");
+    win(t);
+  } else {
+    btn.classList.add("wrong");
+    tryAgain();
+    revealHelp(t);
+  }
+}
+
+function checkTyped(t){
+  if (answered) return;
+  const val = $("typed").value;
+  if (norm(val) === norm(t.answer)){
+    answered = true;
+    win(t);
+  } else {
+    tryAgain();
+    revealHelp(t);
+  }
+}
+
+function win(t){
+  stars++;
+  $("stars").textContent = "⭐".repeat(stars);
+  const f = $("feedback"); f.className = "feedback good";
+  f.textContent = pick(["Yes! 🌟","Brilliant! 💖","Spot on! 🎉","You got it! ✨"]);
+  showTeach(t);
+  addNext();
+}
+
+function tryAgain(){
+  const f = $("feedback"); f.className = "feedback tryagain";
+  f.textContent = pick(["So close — try again! 💪","Not quite — have another go! 🌈","Almost! Try once more 💛"]);
+}
+
+function revealHelp(t){
+  // gentle: offer a "show me" without pressure
+  if ($("showBtn")) return;
+  const b = document.createElement("button");
+  b.className = "btn soft"; b.id = "showBtn"; b.textContent = "Show me 💡";
+  b.onclick = () => { answered = true; showTeach(t, true); addNext(); };
+  $("controls").appendChild(b);
+}
+
+function showTeach(t, withAnswer){
+  const tt = $("teach");
+  tt.textContent = (withAnswer && t.answer ? ("Answer: " + t.answer + " — ") : "") + (t.teach || "");
+  tt.classList.remove("hidden");
+}
+
+function addNext(){
+  if ($("nextBtn")) return;
+  const b = document.createElement("button");
+  b.className = "btn"; b.id = "nextBtn";
+  b.textContent = (i < TASKS.length - 1) ? "Next ➡️" : "Finish 🏁";
+  b.onclick = next;
+  $("controls").appendChild(b);
+}
+
+function next(){
+  i++;
+  if (i >= TASKS.length){ finish(); return; }
+  showTask();
+}
+
+function finish(){
+  $("game").classList.add("hidden");
+  $("end").classList.remove("hidden");
+  $("finalStars").textContent = "⭐".repeat(stars) + "  (" + stars + "/" + TASKS.length + ")";
+}
+
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+
+// Load the real assignments.json if it's sitting next to this file; else use the sample.
+async function boot(){
+  try {
+    const r = await fetch("assignments.json", { cache: "no-store" });
+    if (r.ok){
+      const d = await r.json();
+      if (d && Array.isArray(d.tasks) && d.tasks.length) TASKS = d.tasks;
+    }
+  } catch (e) { /* opened as a plain file — use embedded sample */ }
+  start();
+}
+boot();
+</script>
+</body>
+</html>

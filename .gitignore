@@ -1,0 +1,22 @@
+# ---- system junk ----
+.DS_Store
+Thumbs.db
+
+# ---- dependencies / build ----
+node_modules/
+dist/
+build/
+*.log
+
+# ---- 🔒 NEVER commit personal data ----
+# Photos of real schoolwork, progress data, and any local database stay at
+# home on the Mac only. Keep these ignored.
+data/
+inbox/
+corpus/
+private/
+*.sqlite
+*.sqlite3
+*.db
+*.heic
+*.HEIC
