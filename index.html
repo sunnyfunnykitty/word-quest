@@ -359,6 +359,7 @@
       <div class="avgrid" id="avgrid"></div>
       <div class="hqrow">
         <button class="btn soft" onclick="sendToHQ()">📮 Send progress to HQ</button>
+        <button class="btn soft" onclick="askFresh()">🌱 Start fresh</button>
       </div>
       <div class="hqbox hidden" id="hqbox">
         <div class="blurb">Copy this and send it to Dad's helper 📮</div>
@@ -366,6 +367,14 @@
         <div class="row">
           <button class="btn soft" onclick="copyHQ()">Copy 📋</button>
           <button class="btn soft" onclick="closeHQ()">Close</button>
+        </div>
+      </div>
+      <div class="hqbox hidden" id="freshbox">
+        <div class="blurb">Start a brand-new game? Your coins, pets, furniture and whole house
+          go back to the very beginning. This can't be undone! 🌱</div>
+        <div class="row">
+          <button class="btn pinky" onclick="doFresh()">Yes, start fresh! 🌱</button>
+          <button class="btn soft" onclick="closeFresh()">No, keep my things 💖</button>
         </div>
       </div>
     </div>
@@ -1364,6 +1373,25 @@ function copyHQ(){
   } else { document.execCommand("copy"); done(); }
 }
 function closeHQ(){ $("hqbox").classList.add("hidden"); }
+
+/* ---- Start fresh: back to the very beginning 🌱 (asks first!) ---- */
+function askFresh(){ $("hqbox").classList.add("hidden"); $("freshbox").classList.remove("hidden"); }
+function closeFresh(){ $("freshbox").classList.add("hidden"); }
+function doFresh(){
+  try{
+    localStorage.removeItem("wordquest_city_v1");
+    localStorage.removeItem("wordquest_attempts_v1");
+  }catch(e){}
+  // wipe everything back to day one (keep only the sound on/off comfort setting)
+  state = { coins:0, owned:[], placed:[], mail:[], avatar:"av1", levelsDone:0, sound:state.sound };
+  attempts = []; served = []; sitting = null; curRoom = "living"; selectedChip = null;
+  save();
+  closeFresh();
+  updateHUD();
+  SFX.chest();
+  goCity();
+  toast("A brand-new start! Everything is fresh again 🌱✨");
+}
 
 // ================= BOOT =================
 async function boot(){
