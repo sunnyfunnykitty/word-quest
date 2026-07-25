@@ -1,24 +1,9 @@
 {
   "generated_at": "2026-07-25",
   "for": "word-quest",
-  "batch": "vocab-public-v4",
+  "batch": "vocab-public-v5",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
-    {
-      "id": "v012",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Which word means 'a tiny flying insect that loves to bite on summer evenings'?",
-      "options": [
-        "midge",
-        "ermine",
-        "larva",
-        "drake"
-      ],
-      "answer": "midge",
-      "teach": "Midges are the itchy dots of summer. (A larva is a baby insect, a drake is a boy duck, an ermine is a stoat — collect all four!)"
-    },
     {
       "id": "v013",
       "type": "choose_best_word",
@@ -33,21 +18,6 @@
       ],
       "answer": "port",
       "teach": "Port is the harbour AND the boat's left side. One word, two jobs — English loves a doubler."
-    },
-    {
-      "id": "v014",
-      "type": "choose_best_word",
-      "target_skill": "shades_of_meaning",
-      "difficulty": 3,
-      "prompt": "Word detective! Which ONE word fits BOTH clues: 'a long story book' AND 'completely new and original'?",
-      "options": [
-        "ancient",
-        "novel",
-        "comic",
-        "sequel"
-      ],
-      "answer": "novel",
-      "teach": "You can read a novel, and invent a novel idea — same word, two meanings."
     },
     {
       "id": "v015",
@@ -80,208 +50,193 @@
       "teach": "Entice, tempt and attract are magnets — deter is the force field that stops you."
     },
     {
-      "id": "v030",
-      "type": "fix_the_sentence",
-      "target_skill": "confusable_words",
+      "id": "v049",
+      "type": "choose_best_word",
+      "target_skill": "speech_punctuation",
       "difficulty": 2,
-      "prompt": "Fix this sentence: Don't loose hope!",
-      "answer": "Don't lose hope!",
-      "teach": "Lose = can't find it / don't win. Loose = wobbly-tooth wobbly. One O of difference!"
+      "prompt": "Which one is written correctly?",
+      "options": [
+        "\"I'm here\" said Ben.",
+        "\"I'm here\", said Ben.",
+        "\"I'm here,\" said Ben.",
+        "\"I'm here.\" said Ben."
+      ],
+      "answer": "\"I'm here,\" said Ben.",
+      "teach": "The comma tucks INSIDE the speech marks, right after the last word spoken — then a little 'said'."
     },
     {
-      "id": "v034",
-      "type": "fix_the_sentence",
-      "target_skill": "commas",
+      "id": "v050",
+      "type": "choose_best_word",
+      "target_skill": "speech_punctuation",
       "difficulty": 2,
-      "prompt": "Fix this sentence: The robotic claw, picks up the toys.",
-      "answer": "The robotic claw picks up the toys.",
-      "teach": "That comma was splitting the doer from the doing! The who and the what-they-do stay glued together."
+      "prompt": "Where does the question mark go?",
+      "options": [
+        "\"Are you sure.\" she asked.",
+        "\"Are you sure\"? she asked.",
+        "\"Are you sure?\" she asked.",
+        "\"Are you sure?\", she asked."
+      ],
+      "answer": "\"Are you sure?\" she asked.",
+      "teach": "If the SPOKEN words ask a question, the ? goes inside the speech marks — and you don't need a comma as well."
     },
     {
-      "id": "v035",
-      "type": "fix_the_sentence",
-      "target_skill": "commas",
+      "id": "v051",
+      "type": "choose_best_word",
+      "target_skill": "speech_punctuation",
+      "difficulty": 2,
+      "prompt": "Which is punctuated correctly?",
+      "options": [
+        "\"Look out!,\" yelled Mia.",
+        "\"Look out\"! yelled Mia.",
+        "\"Look out!\" yelled Mia.",
+        "\"Look out.\" yelled Mia."
+      ],
+      "answer": "\"Look out!\" yelled Mia.",
+      "teach": "A shout keeps its ! INSIDE the speech marks, hugging the words that are shouted."
+    },
+    {
+      "id": "v052",
+      "type": "choose_best_word",
+      "target_skill": "speech_punctuation",
       "difficulty": 3,
-      "prompt": "Fix this sentence: Although, the machine is clever, it needs charging.",
-      "answer": "Although the machine is clever, it needs charging.",
-      "teach": "'However' takes a comma straight after it — but 'although' doesn't. It hugs its whole clause first, THEN comes the comma."
-    },
-    {
-      "id": "v036",
-      "type": "choose_best_word",
-      "target_skill": "suffix_prefix_rules",
-      "difficulty": 2,
-      "prompt": "Which spelling is correct?",
+      "prompt": "When the 'she said' comes FIRST, which is correct?",
       "options": [
-        "instantley",
-        "instently",
-        "instantly",
-        "instintly"
+        "She smiled and said, \"come in.\"",
+        "She smiled and said \"Come in.\"",
+        "She smiled and said. \"Come in.\"",
+        "She smiled and said, \"Come in.\""
       ],
-      "answer": "instantly",
-      "teach": "Instant → instantly. The -ant family: instant, brilliant, elegant — all with A."
+      "answer": "She smiled and said, \"Come in.\"",
+      "teach": "When the 'she said' comes first, pop a comma before the speech marks, then start the talking with a capital letter."
     },
     {
-      "id": "v037",
-      "type": "choose_best_word",
-      "target_skill": "suffix_prefix_rules",
-      "difficulty": 2,
-      "prompt": "Which spelling is correct?",
-      "options": [
-        "conveniant",
-        "convenient",
-        "convienient",
-        "convenent"
-      ],
-      "answer": "convenient",
-      "teach": "ConveniENT — the -ent family: convenient, patient, silent. (Tricky, because 'instant' takes A!)"
-    },
-    {
-      "id": "v038",
-      "type": "fix_the_sentence",
+      "id": "v053",
+      "type": "fill_the_gap",
       "target_skill": "apostrophes",
       "difficulty": 2,
-      "prompt": "Fix this sentence: The dragons wings sparkled in the sun.",
-      "answer": "The dragon's wings sparkled in the sun.",
-      "teach": "The wings belong to the dragon — belonging gets an apostrophe: dragon's."
+      "prompt": "The robot lifted ___ arm. (the arm belonging to it)",
+      "options": [
+        "its'",
+        "it is",
+        "it's",
+        "its"
+      ],
+      "answer": "its",
+      "teach": "'Its' with no apostrophe means 'belonging to it'. 'It's' is ONLY ever short for 'it is'."
     },
     {
-      "id": "v039",
-      "type": "fix_the_sentence",
-      "target_skill": "apostrophes",
-      "difficulty": 2,
-      "prompt": "Fix this sentence: I think somethings wrong with the robot.",
-      "answer": "I think something's wrong with the robot.",
-      "teach": "Something's = something IS. The apostrophe stands in for the missing i."
-    },
-    {
-      "id": "v040",
+      "id": "v054",
       "type": "fill_the_gap",
       "target_skill": "homophones",
       "difficulty": 2,
-      "prompt": "The bridge was made of shiny ___.",
+      "prompt": "___ going to love this level! (you are)",
       "options": [
-        "steel",
-        "steele",
-        "stele",
-        "steal"
+        "You're",
+        "Yore",
+        "Youre",
+        "Your"
       ],
-      "answer": "steel",
-      "teach": "Steel = the metal. Steal = what a sneaky magpie does with your sandwich."
+      "answer": "You're",
+      "teach": "'You're' is short for 'you are'. 'Your' means belonging to you, like 'your book'."
     },
     {
-      "id": "v041",
+      "id": "v055",
+      "type": "fill_the_gap",
+      "target_skill": "homophones",
+      "difficulty": 2,
+      "prompt": "The children grabbed ___ coats. (the coats belonging to them)",
+      "options": [
+        "there",
+        "their",
+        "they're",
+        "thier"
+      ],
+      "answer": "their",
+      "teach": "'Their' = belonging to them. 'There' = a place (over there). 'They're' = they are."
+    },
+    {
+      "id": "v056",
       "type": "fill_the_gap",
       "target_skill": "homophones",
       "difficulty": 1,
-      "prompt": "Please take your muddy boots ___ the carpet!",
+      "prompt": "It is ___ hot to play outside. (more than enough)",
       "options": [
-        "offe",
-        "ov",
-        "of",
-        "off"
+        "two",
+        "tooo",
+        "to",
+        "too"
       ],
-      "answer": "off",
-      "teach": "Off = away from (two f's push things away). Of = belonging, like 'a cup of tea'."
+      "answer": "too",
+      "teach": "'Too' with two O's means 'more than enough' or 'also'. 'To' points somewhere, like 'to school'."
     },
     {
-      "id": "v042",
+      "id": "v057",
       "type": "choose_best_word",
-      "target_skill": "homophones",
-      "difficulty": 3,
-      "prompt": "Pens, pencils and paper are kept in the ___ cupboard. Which spelling?",
+      "target_skill": "plurals",
+      "difficulty": 2,
+      "prompt": "More than one daisy — which spelling?",
       "options": [
-        "stationairy",
-        "stationery",
-        "stationry",
-        "stationary"
+        "daisies",
+        "daisyes",
+        "daisys",
+        "daises"
       ],
-      "answer": "stationery",
-      "teach": "StationEry = pEns and Envelopes. StationAry = stAnding still, like a parked car. E for equipment!"
+      "answer": "daisies",
+      "teach": "When a word ends in 'y', swap the y for 'ies': daisy→daisies, story→stories, party→parties."
     },
     {
-      "id": "v043",
+      "id": "v058",
       "type": "fix_the_sentence",
-      "target_skill": "high_freq_misspellings",
+      "target_skill": "subject_verb_agreement",
       "difficulty": 2,
-      "prompt": "Fix this sentence: We play games together everynight.",
-      "answer": "We play games together every night.",
-      "teach": "Every night, every letter, every moment — 'every' likes its own space. Two words, always!"
+      "prompt": "Fix this sentence: The text say she is tired.",
+      "answer": "The text says she is tired.",
+      "teach": "One person doing something now needs 's' on the verb: the text SAYS, she RUNS, he PLAYS."
     },
     {
-      "id": "v044",
+      "id": "v059",
       "type": "choose_best_word",
-      "target_skill": "missing_words",
+      "target_skill": "commas",
       "difficulty": 3,
-      "prompt": "Sentence detective! Which of these is a COMPLETE sentence?",
+      "prompt": "Which sentence is punctuated correctly?",
       "options": [
-        "The alarm will automatically.",
-        "The alarm will sound if the machine overheats.",
-        "Sounding the alarm very loudly.",
-        "If the alarm goes off."
+        "Although the robot is clever, it needs charging.",
+        "Although, the robot is clever, it needs charging.",
+        "Although the robot is clever it needs charging.",
+        "Although, the robot is clever it needs charging."
       ],
-      "answer": "The alarm will sound if the machine overheats.",
-      "teach": "A complete sentence needs a doer AND a full doing. 'The alarm will automatically…' — will automatically WHAT? Always finish the verb!"
+      "answer": "Although the robot is clever, it needs charging.",
+      "teach": "'Although' hugs its whole idea first — the comma waits until that idea finishes, not straight after 'although'."
     },
     {
-      "id": "v045",
+      "id": "v060",
       "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Maths corner! Which angle is bigger than a right angle but smaller than a straight line?",
+      "target_skill": "sentence_demarcation",
+      "difficulty": 3,
+      "prompt": "Sentence detective! Which one is a COMPLETE sentence?",
       "options": [
-        "obtuse",
-        "right",
-        "acute",
-        "reflex"
+        "Because it was freezing cold.",
+        "The firebird soared into the golden sky.",
+        "Which glowed in the dark.",
+        "Scrambling away into the night."
       ],
-      "answer": "obtuse",
-      "teach": "Obtuse = the wide, lazy armchair angle (between 90° and 180°). Acute is the cute little one under 90°."
+      "answer": "The firebird soared into the golden sky.",
+      "teach": "A whole sentence needs someone AND what they do. 'Scrambling away…' — who? doing what? Finish the thought!"
     },
     {
-      "id": "v046",
-      "type": "choose_best_word",
-      "target_skill": "meaning_in_context",
-      "difficulty": 2,
-      "prompt": "Maths corner! In the fraction 3/4, what is the 4 called?",
-      "options": [
-        "numerator",
-        "divisor",
-        "denominator",
-        "multiplier"
-      ],
-      "answer": "denominator",
-      "teach": "Denominator = Down (both start with D!). The numerator is the number up top."
-    },
-    {
-      "id": "v047",
+      "id": "v061",
       "type": "choose_best_word",
       "target_skill": "high_freq_misspellings",
-      "difficulty": 3,
-      "prompt": "Which spelling is correct?",
+      "difficulty": 1,
+      "prompt": "Which is correct?",
       "options": [
-        "mischevious",
-        "mischievious",
-        "mischevous",
-        "mischievous"
+        "every night",
+        "everynight",
+        "every-night",
+        "evry night"
       ],
-      "answer": "mischievous",
-      "teach": "Mis-CHIE-vous — a cheeky CHIEF is hiding inside it. (Official Year 5/6 tricky word!)"
-    },
-    {
-      "id": "v048",
-      "type": "odd_one_out",
-      "target_skill": "word_relationships",
-      "difficulty": 2,
-      "prompt": "Which word is the odd one out?",
-      "options": [
-        "drenched",
-        "soaked",
-        "parched",
-        "dripping"
-      ],
-      "answer": "parched",
-      "teach": "Drenched, soaked and dripping are soggy — parched means bone-dry and desperate for a drink!"
+      "answer": "every night",
+      "teach": "'Every' likes its own space: every night, every day, every time — always two words."
     }
   ]
 }
