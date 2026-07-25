@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-25",
   "for": "word-quest",
-  "batch": "vocab-public-v1",
+  "batch": "vocab-public-v2",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
@@ -429,8 +429,8 @@
       "type": "fix_the_sentence",
       "target_skill": "homophones",
       "difficulty": 2,
-      "prompt": "Fix this sentence: The explorer couldn't bare the freezing wind.",
-      "answer": "The explorer couldn't bear the freezing wind.",
+      "prompt": "Fix this sentence: I couldn't bare the freezing wind.",
+      "answer": "I couldn't bear the freezing wind.",
       "teach": "To bear = to put up with (like a tough old bear). Bare = uncovered — bare feet in the snow, brrr!"
     },
     {
@@ -438,8 +438,8 @@
       "type": "fix_the_sentence",
       "target_skill": "confusable_words",
       "difficulty": 2,
-      "prompt": "Fix this sentence: Don't loose hope — the rescue ship is close!",
-      "answer": "Don't lose hope — the rescue ship is close!",
+      "prompt": "Fix this sentence: Don't loose hope!",
+      "answer": "Don't lose hope!",
       "teach": "Lose = can't find it / don't win. Loose = wobbly-tooth wobbly. One O of difference!"
     },
     {
@@ -447,8 +447,8 @@
       "type": "fix_the_sentence",
       "target_skill": "homophones",
       "difficulty": 2,
-      "prompt": "Fix this sentence: Your going to love this ancient castle.",
-      "answer": "You're going to love this ancient castle.",
+      "prompt": "Fix this sentence: Your going to love this castle.",
+      "answer": "You're going to love this castle.",
       "teach": "You're = you are (the apostrophe hides the missing A). Your = belonging to you, as in your crown."
     },
     {
@@ -456,17 +456,9 @@
       "type": "fix_the_sentence",
       "target_skill": "homophones",
       "difficulty": 3,
-      "prompt": "Fix this sentence: The treasure was buried to deep too dig up.",
-      "answer": "The treasure was buried too deep to dig up.",
+      "prompt": "Fix this sentence: The chest was buried to deep too dig up.",
+      "answer": "The chest was buried too deep to dig up.",
       "teach": "Too = 'more than enough' (too deep, too late). To = direction or a to-do. This one had them swapped!"
-    },
-    {
-      "id": "v033",
-      "type": "design_me",
-      "target_skill": "creativity",
-      "difficulty": 1,
-      "prompt": "Designer challenge: invent a Word Zoo! Every new word you beat becomes a creature you collect. What do they look like? Where do they live? You decide — sketch it, then build it!",
-      "teach": "Your game, your rules. (A 'menagerie' is a collection of animals — maybe your first exhibit?)"
     }
   ]
 }
