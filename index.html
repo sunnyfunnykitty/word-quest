@@ -90,6 +90,7 @@
   .opt:active{transform:scale(.97);}
   .opt.right{background:var(--mint);border-color:var(--mint-deep);}
   .opt.wrong{background:#ffe0e0;border-color:#ffb3b3;}
+  .opt.gone{opacity:.28;pointer-events:none;text-decoration:line-through;}
   .inpwrap{display:flex;flex-direction:column;gap:10px;}
   input[type=text]{font-family:var(--font);font-size:17px;text-align:center;color:var(--ink);
        border:3px solid var(--pink-deep);border-radius:16px;padding:12px;outline:none;background:#fff;}
@@ -119,6 +120,8 @@
 
   /* ---- Post office ---- */
   .maillist{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px;}
+  .mailslot{border:3px dashed #f0dfe8;border-radius:18px;min-height:96px;display:flex;
+            align-items:center;justify-content:center;font-size:11px;color:var(--ink);opacity:.55;}
   .gift{background:#fdf2f7;border:3px dashed var(--pink-deep);border-radius:18px;padding:10px 4px;
         cursor:pointer;transition:transform .1s;}
   .gift:active{transform:scale(.9);}
@@ -138,6 +141,41 @@
           linear-gradient(180deg, var(--pink) 0 54%, #fff0d8 54% 57%,
              transparent 57%),
           repeating-linear-gradient(90deg,#f6d7a8 0 34px,#f0cf9d 34px 36px);}
+  /* the other rooms of the house 🏠 */
+  .room.kitchen{background:
+          radial-gradient(circle at 14% 24%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          radial-gradient(circle at 30% 10%, rgba(255,255,255,.6) 0 4px, transparent 5px),
+          radial-gradient(circle at 72% 20%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          radial-gradient(circle at 88% 8%, rgba(255,255,255,.6) 0 4px, transparent 5px),
+          linear-gradient(180deg,#fff3c9 0 54%, #ffe2b8 54% 57%, transparent 57%),
+          repeating-conic-gradient(#fff7ea 0% 25%, #ffe4ef 0% 50%) 0 0/44px 44px;}
+  .room.bedroom{background:
+          radial-gradient(circle at 14% 24%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          radial-gradient(circle at 52% 30%, rgba(255,255,255,.6) 0 4px, transparent 5px),
+          radial-gradient(circle at 72% 20%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          radial-gradient(circle at 88% 8%, rgba(255,255,255,.6) 0 4px, transparent 5px),
+          linear-gradient(180deg,#eadcff 0 54%, #dcc9f2 54% 57%, transparent 57%),
+          linear-gradient(180deg,#f7dcE9 0 100%);}
+  .room.bath{background:
+          radial-gradient(circle at 14% 24%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          radial-gradient(circle at 72% 20%, rgba(255,255,255,.6) 0 5px, transparent 6px),
+          linear-gradient(180deg,#d8f1fd 0 54%, #bfe6f7 54% 57%, transparent 57%),
+          repeating-linear-gradient(90deg,#e6f7ff 0 34px,#d2ecfa 34px 68px);}
+  .room.garden{background:
+          radial-gradient(circle at 84% 12%, #ffe789 0 24px, rgba(255,231,137,0) 25px),
+          radial-gradient(circle at 18% 16%, rgba(255,255,255,.85) 0 9px, transparent 10px),
+          radial-gradient(circle at 26% 13%, rgba(255,255,255,.85) 0 11px, transparent 12px),
+          radial-gradient(circle at 34% 17%, rgba(255,255,255,.85) 0 8px, transparent 9px),
+          linear-gradient(180deg,#cfeffd 0 54%, #a8e0a0 54% 57%, transparent 57%),
+          repeating-linear-gradient(100deg,#b6e89e 0 26px,#a8e0a0 26px 52px);}
+  .room.kitchen .rug,.room.bath .rug,.room.garden .rug{display:none;}
+  .room.garden .window{display:none;}
+  .roomtabs{display:flex;flex-direction:column;gap:4px;margin-bottom:8px;}
+  .rtrow{display:flex;gap:6px;align-items:center;justify-content:center;}
+  .rtlabel{font-size:10px;opacity:.7;width:78px;text-align:right;}
+  .rtab{font-family:var(--font);font-size:12px;padding:6px 12px;border-radius:14px;background:#fff;
+        border:2px solid #f3e6ee;cursor:pointer;color:var(--ink);}
+  .rtab.on{background:var(--pink);border-color:var(--pink-deep);}
   .room .window{position:absolute;top:4%;left:50%;transform:translateX(-50%);width:132px;pointer-events:none;}
   .room .rug{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:48%;height:13%;
              background:radial-gradient(ellipse at center,#eafaf1 0 55%,var(--mint) 55%);
@@ -146,7 +184,7 @@
           filter:drop-shadow(0 3px 3px rgba(0,0,0,.14));}
   .placed svg{width:100%;height:100%;display:block;}
   .placed.pet svg{animation:bob 1.8s ease-in-out infinite;}
-  .roomYou{position:absolute;left:10%;bottom:5%;width:76px;animation:bob 2s ease-in-out infinite;
+  .roomYou{position:absolute;left:10%;bottom:5%;width:104px;animation:bob 2s ease-in-out infinite;
            transition:left .45s ease,top .45s ease,bottom .45s ease;pointer-events:none;}
   .roomYou svg{width:100%;height:auto;display:block;}
   .roomYou.sitting{animation:none;}
@@ -285,6 +323,7 @@
       <div class="backrow"><button class="btn soft" onclick="goCity()">⬅️ Town</button></div>
       <div class="shophead">🏠 My House</div>
       <div class="hint" id="houseHint">Place things from your drop bar — then TAP them to play, or HOLD them to pick up!</div>
+      <div class="roomtabs" id="roomtabs"></div>
       <div class="room" id="room">
         <div class="window">
           <svg viewBox="0 0 132 96">
@@ -401,6 +440,21 @@ const ART = {
   fur_tub:'<svg viewBox="0 0 64 64"><circle cx="20" cy="14" r="3.6" fill="#dcf2fd"/><circle cx="28" cy="9" r="2.8" fill="#dcf2fd"/><circle cx="37" cy="13" r="3.2" fill="#dcf2fd"/><circle cx="45" cy="9" r="2.2" fill="#dcf2fd"/><ellipse cx="32" cy="27" rx="24" ry="6" fill="#aadef7"/><circle cx="24" cy="25" r="2.6" fill="#fff" opacity=".9"/><circle cx="31" cy="26.5" r="2" fill="#fff" opacity=".9"/><circle cx="39" cy="25" r="2.4" fill="#fff" opacity=".9"/><path d="M8 27h48v8a15 15 0 0 1-15 15H23A15 15 0 0 1 8 35z" fill="#fff"/><rect x="8" y="33" width="48" height="4.5" fill="#ffd9e8"/><ellipse cx="32" cy="27" rx="24" ry="6" fill="none" stroke="#c9e4f2" stroke-width="2"/><path d="M16 50l-4 8M48 50l4 8" stroke="#f2b83c" stroke-width="3.5" stroke-linecap="round"/></svg>',
   fur_fridge:'<svg viewBox="0 0 64 64"><rect x="16" y="5" width="32" height="53" rx="7" fill="#bfe8d2"/><rect x="16" y="23" width="32" height="2.6" fill="#8fd9b6"/><rect x="20" y="10" width="3.2" height="9" rx="1.6" fill="#fff"/><rect x="20" y="29" width="3.2" height="13" rx="1.6" fill="#fff"/><path d="M38 15c-2.4-2-1.6-4.6.3-3.2 1.9-1.4 2.7 1.2.3 3.2z" fill="#ff9ec4"/><path d="M40 36l1 2.2 2.4.3-1.8 1.6.5 2.4-2.1-1.2-2.1 1.2.5-2.4-1.8-1.6 2.4-.3z" fill="#ffd95a"/><circle cx="33" cy="49" r="2.2" fill="#ff9ec4"/></svg>',
   fur_radio:'<svg viewBox="0 0 64 64"><path d="M22 15l10-8" stroke="#e8709f" stroke-width="2.5" stroke-linecap="round"/><circle cx="33" cy="6.5" r="2.2" fill="#e8709f"/><rect x="10" y="15" width="44" height="31" rx="9" fill="#ff9ec4"/><circle cx="24" cy="30.5" r="8.5" fill="#fff"/><circle cx="24" cy="30.5" r="5.5" fill="#ffd9e8"/><circle cx="24" cy="30.5" r="2" fill="#e8709f"/><rect x="36" y="21" width="12" height="4" rx="2" fill="#fff"/><rect x="36" y="28" width="12" height="4" rx="2" fill="#fff"/><rect x="36" y="35" width="12" height="4" rx="2" fill="#fff"/><rect x="16" y="46" width="5" height="6" rx="2" fill="#e8709f"/><rect x="43" y="46" width="5" height="6" rx="2" fill="#e8709f"/></svg>',
+  fur_cupboard:'<svg viewBox="0 0 64 64"><rect x="14" y="8" width="36" height="16" rx="3" fill="#bfe8d2"/><rect x="31" y="8" width="2" height="16" fill="#8fd9b6"/><circle cx="27" cy="16" r="1.6" fill="#5cbf8f"/><circle cx="37" cy="16" r="1.6" fill="#5cbf8f"/><rect x="14" y="26" width="36" height="6" rx="2" fill="#e0b287"/><circle cx="22" cy="28.5" r="2.4" fill="#ff9ec4"/><circle cx="29" cy="28.5" r="2.4" fill="#7fb7e8"/><circle cx="36" cy="28.5" r="2.4" fill="#ffd95a"/><circle cx="43" cy="28.5" r="2.4" fill="#8fd9b6"/><rect x="14" y="34" width="36" height="22" rx="3" fill="#a8dcc3"/><rect x="31" y="34" width="2" height="22" fill="#8fd9b6"/><circle cx="27" cy="45" r="1.6" fill="#5cbf8f"/><circle cx="37" cy="45" r="1.6" fill="#5cbf8f"/></svg>',
+  fur_sink:'<svg viewBox="0 0 64 64"><path d="M27 20v-6q0-4 5-4t5 4" fill="none" stroke="#b9c4d6" stroke-width="3.4" stroke-linecap="round"/><path d="M37 14v6" stroke="#b9c4d6" stroke-width="3.4" stroke-linecap="round"/><circle cx="22" cy="15" r="2.6" fill="#ff9ec4"/><circle cx="42" cy="15" r="2.6" fill="#8fd9b6"/><circle cx="37" cy="23" r="1.6" fill="#7fcef0"/><rect x="14" y="25" width="36" height="13" rx="6.5" fill="#fff"/><ellipse cx="32" cy="30" rx="13" ry="3.5" fill="#dcf2fd"/><rect x="26" y="38" width="12" height="15" fill="#fff"/><ellipse cx="32" cy="54" rx="10" ry="2.8" fill="#e8eef5"/></svg>',
+  fur_toilet:'<svg viewBox="0 0 64 64"><rect x="18" y="10" width="28" height="14" rx="3" fill="#fff"/><circle cx="32" cy="17" r="2.4" fill="#7fcef0"/><ellipse cx="32" cy="34" rx="16" ry="7" fill="#ffd9e8"/><ellipse cx="32" cy="33" rx="12" ry="4.5" fill="#fff"/><path d="M20 36q0 10 8 12l-1 6h10l-1-6q8-2 8-12z" fill="#fff"/><ellipse cx="32" cy="56" rx="10" ry="2.6" fill="#e8eef5"/></svg>',
+  fur_wardrobe:'<svg viewBox="0 0 64 64"><rect x="13" y="6" width="38" height="50" rx="4" fill="#c8a8ef"/><rect x="31" y="6" width="2" height="50" fill="#a684d9"/><ellipse cx="22" cy="26" rx="6" ry="10" fill="#eee3ff"/><ellipse cx="22" cy="26" rx="4" ry="7.5" fill="#dcf2fd"/><circle cx="28.5" cy="31" r="1.7" fill="#8a6fa8"/><circle cx="35.5" cy="31" r="1.7" fill="#8a6fa8"/><path d="M40 18c-2.4-2-1.6-4.4.3-3.1 1.9-1.3 2.7 1.1.3 3.1z" fill="#ff9ec4"/><rect x="16" y="56" width="5" height="4" rx="1.5" fill="#8a6fa8"/><rect x="43" y="56" width="5" height="4" rx="1.5" fill="#8a6fa8"/></svg>',
+  fur_swing:'<svg viewBox="0 0 64 64"><path d="M6 58L16 12h4L10 58z" fill="#e0b287"/><path d="M58 58L48 12h-4L54 58z" fill="#e0b287"/><rect x="12" y="10" width="40" height="4.5" rx="2.2" fill="#c98d5f"/><path d="M26 14v26M38 14v26" stroke="#b9855a" stroke-width="2"/><rect x="22" y="40" width="20" height="5" rx="2.5" fill="#ff9ec4"/></svg>',
+  fur_tree:'<svg viewBox="0 0 64 64"><rect x="29" y="36" width="6" height="20" rx="2.5" fill="#b9855a"/><circle cx="32" cy="22" r="16" fill="#7fcf8f"/><circle cx="18" cy="28" r="10" fill="#8fd9b6"/><circle cx="46" cy="28" r="10" fill="#8fd9b6"/><circle cx="25" cy="20" r="2.6" fill="#e85c5c"/><circle cx="39" cy="16" r="2.6" fill="#e85c5c"/><circle cx="45" cy="26" r="2.6" fill="#e85c5c"/><circle cx="20" cy="30" r="2.6" fill="#e85c5c"/><ellipse cx="32" cy="57" rx="12" ry="2.6" fill="#6fbf8e" opacity=".5"/></svg>',
+  fur_pond:'<svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="24" ry="12" fill="#7fcef0"/><ellipse cx="32" cy="41" rx="19" ry="8.5" fill="#aadef7"/><circle cx="12" cy="34" r="3" fill="#c9c2b8"/><circle cx="52" cy="35" r="3.4" fill="#d8d2c8"/><circle cx="20" cy="52" r="3" fill="#d8d2c8"/><circle cx="46" cy="51" r="2.6" fill="#c9c2b8"/><ellipse cx="36" cy="40" rx="5" ry="3.6" fill="#ffd95a"/><circle cx="41" cy="36" r="3" fill="#ffd95a"/><path d="M44 36l4 1.5-4 1.5z" fill="#ff9440"/><circle cx="42" cy="35.4" r=".8" fill="#5c4a63"/><path d="M22 44q3-2 6 0" stroke="#dcf2fd" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>',
+  fur_flowers:'<svg viewBox="0 0 64 64"><ellipse cx="32" cy="50" rx="21" ry="7" fill="#b9855a"/><ellipse cx="32" cy="48.5" rx="18" ry="5" fill="#d3985f"/><path d="M20 46V34M32 46V30M44 46V35" stroke="#6fbf8e" stroke-width="2.4" stroke-linecap="round"/><circle cx="20" cy="31" r="4.5" fill="#ff9ec4"/><circle cx="20" cy="31" r="2" fill="#ffd95a"/><circle cx="32" cy="27" r="5" fill="#c8a8ef"/><circle cx="32" cy="27" r="2.2" fill="#ffd95a"/><circle cx="44" cy="32" r="4.5" fill="#ffd95a"/><circle cx="44" cy="32" r="2" fill="#e8709f"/></svg>',
+  fur_beanbag:'<svg viewBox="0 0 64 64"><ellipse cx="32" cy="47" rx="22" ry="11" fill="#ff9ec4"/><path d="M12 47q0-25 20-25t20 25q-20 9-40 0z" fill="#ff9ec4"/><path d="M18 33q4-8 13-9" stroke="#ffb7d5" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="32" cy="29" rx="9" ry="3.5" fill="#e8709f" opacity=".25"/></svg>',
+  fur_table:'<svg viewBox="0 0 64 64"><circle cx="32" cy="9" r="3" fill="#ffd95a"/><circle cx="28" cy="12" r="2.4" fill="#ff9ec4"/><circle cx="36" cy="12" r="2.4" fill="#ff9ec4"/><circle cx="32" cy="14.5" r="2.4" fill="#ff9ec4"/><rect x="30.8" y="14" width="2.4" height="8" fill="#8fd9b6"/><ellipse cx="32" cy="24" rx="22" ry="6.5" fill="#bfe8d2"/><rect x="10" y="24" width="44" height="5" rx="2.5" fill="#8fd9b6"/><rect x="14" y="29" width="4.5" height="24" rx="2" fill="#c98d5f"/><rect x="45.5" y="29" width="4.5" height="24" rx="2" fill="#c98d5f"/><rect x="29.8" y="29" width="4.5" height="26" rx="2" fill="#e0b287"/></svg>',
+  fur_desk:'<svg viewBox="0 0 64 64"><rect x="16" y="16" width="9" height="10" rx="2" fill="#c8a8ef"/><path d="M18.5 16v-6M22.5 16v-7" stroke="#e8709f" stroke-width="2.2" stroke-linecap="round"/><rect x="30" y="21" width="16" height="5" rx="1.5" fill="#7fb7e8"/><rect x="32" y="17" width="16" height="5" rx="1.5" fill="#ff9ec4"/><rect x="8" y="26" width="48" height="6" rx="3" fill="#e0b287"/><rect x="36" y="32" width="18" height="22" rx="3" fill="#f6cfe0"/><circle cx="45" cy="38" r="1.8" fill="#e8709f"/><circle cx="45" cy="47" r="1.8" fill="#e8709f"/><rect x="36" y="42.5" width="18" height="2" fill="#e8709f" opacity=".35"/><rect x="11" y="32" width="4.5" height="22" rx="2" fill="#c98d5f"/></svg>',
+  fur_oven:'<svg viewBox="0 0 64 64"><rect x="13" y="12" width="38" height="46" rx="7" fill="#f8ccd9"/><circle cx="22" cy="19" r="2.6" fill="#e8709f"/><circle cx="32" cy="19" r="2.6" fill="#e8709f"/><circle cx="42" cy="19" r="2.6" fill="#e8709f"/><rect x="18" y="26" width="28" height="4" rx="2" fill="#fff"/><rect x="18" y="33" width="28" height="19" rx="4" fill="#fff"/><rect x="21" y="36" width="22" height="13" rx="3" fill="#ffe9c9"/><path d="M25 46a4.5 4.5 0 0 1 9 0z" fill="#e8b06b"/><circle cx="27.5" cy="44" r=".9" fill="#a86f3d"/><circle cx="31" cy="43" r=".9" fill="#a86f3d"/><rect x="16" y="55" width="4" height="4" rx="1.5" fill="#d98cab"/><rect x="44" y="55" width="4" height="4" rx="1.5" fill="#d98cab"/></svg>',
+  fur_pancakes:'<svg viewBox="0 0 64 64"><ellipse cx="32" cy="49" rx="19" ry="4.5" fill="#fff"/><ellipse cx="32" cy="44" rx="15" ry="5.5" fill="#e8b06b"/><ellipse cx="32" cy="39.5" rx="14" ry="5.5" fill="#f2c98b"/><ellipse cx="32" cy="35" rx="13" ry="5.5" fill="#e8b06b"/><ellipse cx="32" cy="32.5" rx="13" ry="4" fill="#f7d9a0"/><rect x="27.5" y="26" width="9" height="6" rx="1.5" fill="#fff5c2"/><path d="M23 33q1 4 3.5 1.5t3 2.5 3.5-1 3.5 2 3.5-2 2.5 1" stroke="#c9853f" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".8"/></svg>',
+  fur_pizza:'<svg viewBox="0 0 64 64"><ellipse cx="32" cy="40" rx="24" ry="14" fill="#e0b287"/><ellipse cx="32" cy="38" rx="21" ry="12" fill="#f2b83c"/><ellipse cx="32" cy="37.5" rx="17" ry="9.5" fill="#ffd071"/><circle cx="25" cy="34" r="3" fill="#e85c5c"/><circle cx="38" cy="33" r="3" fill="#e85c5c"/><circle cx="32" cy="41" r="3" fill="#e85c5c"/><circle cx="42" cy="40" r="2.6" fill="#e85c5c"/><circle cx="22" cy="41" r="2.6" fill="#e85c5c"/><path d="M29 36l2 2M40 38l-2 1.5M25 44l2-1" stroke="#6fbf8e" stroke-width="1.6" stroke-linecap="round"/></svg>',
+  fur_icecream:'<svg viewBox="0 0 64 64"><path d="M20 26h24l-7 20h-10z" fill="#dcf2fd" opacity=".92"/><rect x="29.5" y="46" width="5" height="7" fill="#bfe6f7"/><ellipse cx="32" cy="55" rx="10" ry="3" fill="#bfe6f7"/><circle cx="25" cy="22" r="7" fill="#ffb7d5"/><circle cx="39" cy="22" r="7" fill="#bfe8d2"/><circle cx="32" cy="14" r="7" fill="#fdf1de"/><circle cx="32" cy="6.5" r="2.6" fill="#e85c7a"/><path d="M24 21l1.5 2M38 20l2 1.5M31 12l2 1.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/><circle cx="27" cy="30" r="1" fill="#e8709f"/><circle cx="33" cy="32" r="1" fill="#5cbf8f"/><circle cx="38" cy="29" r="1" fill="#f2b83c"/></svg>',
   fur_castle:'<svg viewBox="0 0 64 64"><rect x="10.5" y="2" width="1.6" height="9" fill="#c98d5f"/><path d="M12 2l8 2.5L12 7z" fill="#ff9ec4"/><rect x="51" y="14" width="9" height="20" rx="2" fill="#b493e0"/><rect x="51" y="11" width="2.6" height="4" fill="#b493e0"/><rect x="54.2" y="11" width="2.6" height="4" fill="#b493e0"/><rect x="57.4" y="11" width="2.6" height="4" fill="#b493e0"/><circle cx="55.5" cy="21" r="2.2" fill="#eee3ff"/><rect x="4" y="10" width="4.5" height="6" rx="1" fill="#c8a8ef"/><rect x="9.5" y="10" width="4.5" height="6" rx="1" fill="#c8a8ef"/><rect x="15" y="10" width="4.5" height="6" rx="1" fill="#c8a8ef"/><rect x="4" y="14" width="15.5" height="34" rx="3" fill="#c8a8ef"/><circle cx="11.7" cy="24" r="3.2" fill="#eee3ff"/><rect x="14" y="33" width="46" height="13" rx="5" fill="#fff"/><rect x="16" y="27" width="14" height="9" rx="4" fill="#ffd9e8"/><path d="M30 31h25a4 4 0 0 1 4 4v11H30z" fill="#ffd95a"/><path d="M43 35l1.2 2.5 2.7.3-2 1.9.5 2.7-2.4-1.3-2.4 1.3.5-2.7-2-1.9 2.7-.3z" fill="#fff"/><rect x="14" y="46" width="4.5" height="9" rx="2" fill="#c98d5f"/><rect x="53" y="46" width="4.5" height="9" rx="2" fill="#c98d5f"/></svg>'
 };
 // a wrapped present for the Post Office 🎁
@@ -462,17 +516,32 @@ const CATALOG = [
   // furniture 🛋️
   {id:"fur_chair",  kind:"furniture", name:"Chair",      price:15},
   {id:"fur_lamp",   kind:"furniture", name:"Lamp",       price:15},
+  {id:"fur_flowers",kind:"furniture", name:"Flower Bed", price:16},
   {id:"fur_plant",  kind:"furniture", name:"Plant",      price:18},
   {id:"fur_books",  kind:"furniture", name:"Books",      price:20},
   {id:"fur_pic",    kind:"furniture", name:"Picture",    price:20},
+  {id:"fur_beanbag",kind:"furniture", name:"Bean Bag",   price:20},
   {id:"fur_bow",    kind:"furniture", name:"Big Bow",    price:22},
+  {id:"fur_toilet", kind:"furniture", name:"Toilet",     price:22},
+  {id:"fur_pancakes",kind:"furniture", name:"Pancakes",  price:24},
+  {id:"fur_icecream",kind:"furniture", name:"Ice Cream", price:26},
+  {id:"fur_pizza",  kind:"furniture", name:"Pizza",      price:28},
+  {id:"fur_cupboard",kind:"furniture", name:"Cupboard",  price:26},
+  {id:"fur_tree",   kind:"furniture", name:"Apple Tree", price:28},
+  {id:"fur_sink",   kind:"furniture", name:"Sink",       price:30},
+  {id:"fur_pond",   kind:"furniture", name:"Duck Pond",  price:34},
+  {id:"fur_swing",  kind:"furniture", name:"Swing",      price:38},
+  {id:"fur_wardrobe",kind:"furniture", name:"Wardrobe",  price:42},
   {id:"fur_bed",    kind:"furniture", name:"Cosy Bed",   price:25},
   {id:"fur_mirror", kind:"furniture", name:"Mirror",     price:28},
   {id:"fur_teddy",  kind:"furniture", name:"Teddy",      price:30},
+  {id:"fur_table",  kind:"furniture", name:"Table",      price:30},
   {id:"fur_cake",   kind:"furniture", name:"Cake Stand", price:32},
   {id:"fur_sofa",   kind:"furniture", name:"Sofa",       price:35},
+  {id:"fur_desk",   kind:"furniture", name:"Desk",       price:38},
   {id:"fur_radio",  kind:"furniture", name:"Radio",      price:40},
   {id:"fur_tub",    kind:"furniture", name:"Bathtub",    price:45},
+  {id:"fur_oven",   kind:"furniture", name:"Oven",       price:48},
   {id:"fur_fridge", kind:"furniture", name:"Fridge",     price:55},
   {id:"fur_tv",     kind:"furniture", name:"TV",         price:60},
   {id:"fur_piano",  kind:"furniture", name:"Piano",      price:85},
@@ -590,6 +659,8 @@ function load(){
   // older saves stored an emoji avatar — hop into the new drawn friends!
   if (!KIDS.some(k => k.id === state.avatar)) state.avatar = "av1";
   if (state.sound === undefined) state.sound = true;
+  // things placed before the house grew rooms live in the Living Room
+  if (Array.isArray(state.placed)) state.placed.forEach(p => { if (!p.room) p.room = "living"; });
   loadAttempts();
 }
 
@@ -616,7 +687,7 @@ function stamp(){
 
 let TASKS = EMBEDDED.tasks;
 let BATCH = null;                        // which word pack we're playing (from assignments.json)
-let curTasks = [], qi = 0, levelStars = 0, answered = false, helped = false, wrongTries = 0;
+let curTasks = [], qi = 0, levelStars = 0, answered = false, helped = false, wrongTries = 0, hinted = false;
 let curShop = null, shopTab = "pet", selectedChip = null, lastGift = null;
 
 const $ = (id) => document.getElementById(id);
@@ -687,6 +758,9 @@ let served = [];   // played this session — keeps levels varied
 function nextTasks(n){
   const pool = TASKS.filter(playable);
   const rematch = [], fresh = [], normal = [], resting = [];
+  const cooling = [];
+  // anything answered in the last couple of levels takes a little holiday
+  const recentIds = new Set(attempts.slice(-6).map(a => a.task_id));
   pool.forEach(t => {
     const h = attempts.filter(a => a.task_id === t.id);
     if (!h.length){ fresh.push(t); return; }
@@ -694,6 +768,7 @@ function nextTasks(n){
     const coldWins = h.filter(a => a.correct && !a.helped && a.tries === 1).length;
     if (last.helped || last.tries > 1) rematch.push(t);   // a rival! back for a rematch
     else if (coldWins >= 2) resting.push(t);              // beaten twice cold — well-earned rest
+    else if (recentIds.has(t.id)) cooling.push(t);        // just beaten — not straight away again
     else normal.push(t);
   });
   // within each group: new-this-session first, then shuffled
@@ -709,6 +784,7 @@ function nextTasks(n){
   take(order(rematch), 2);   // at most 2 rematches per level — keep levels fun, not a drill
   take(order(fresh));
   take(order(normal));
+  take(order(cooling));      // recently-beaten words wait unless we run short
   take(order(rematch));      // extra rematches only if nothing else is left
   take(order(resting));      // resting words only ever fill in when the pool is tiny
   out.forEach(t => { if (!served.includes(t.id)) served.push(t.id); });
@@ -727,7 +803,7 @@ function startLevel(shop){
 }
 
 function showTask(){
-  answered = false; helped = false; wrongTries = 0;
+  answered = false; helped = false; wrongTries = 0; hinted = false;
   const t = curTasks[qi];
   $("progress").textContent = "Question " + (qi+1) + " of " + curTasks.length;
   $("stars").textContent = "⭐".repeat(levelStars);
@@ -763,6 +839,32 @@ function showTask(){
     area.appendChild(wrap);
     setTimeout(() => inp.focus(), 60);
   }
+
+  // a little helping hand for when you're really stuck ✂️
+  const hb = document.createElement("button");
+  hb.className = "btn soft"; hb.id = "hintBtn"; hb.textContent = "Hint ✂️";
+  hb.onclick = () => useHint(t);
+  $("controls").appendChild(hb);
+}
+
+function useHint(t){
+  if (answered || hinted) return;
+  hinted = true;
+  SFX.click();
+  const hb = $("hintBtn");
+  if (hb) hb.remove();
+  const f = $("feedback");
+  if (Array.isArray(t.options) && t.options.length){
+    // snip away two wrong answers
+    const wrongs = shuffled([...document.querySelectorAll(".opt")]
+      .filter(b => b.textContent !== t.answer && !b.classList.contains("wrong")));
+    wrongs.slice(0, 2).forEach(b => b.classList.add("gone"));
+    f.className = "feedback good";
+    f.textContent = "Snip snip — two tricky ones gone! ✂️✨";
+  } else {
+    f.className = "feedback good";
+    f.textContent = "Psst… it starts with “" + (t.answer || "?").trim().charAt(0).toUpperCase() + "…” 🤫";
+  }
 }
 
 function pickOption(btn, opt, t){
@@ -794,7 +896,7 @@ function checkTyped(t){
 function win(t){
   logAttempt(t.id, true, false, wrongTries + 1);
   levelStars++;
-  const earned = helped ? COINS_HELPED : COINS_RIGHT;
+  const earned = helped ? COINS_HELPED : (hinted ? 3 : COINS_RIGHT);
   state.coins += earned; save();
   updateHUD();
   $("stars").textContent = "⭐".repeat(levelStars);
@@ -812,6 +914,8 @@ function tryAgain(){
 }
 
 function revealHelp(t){
+  const hb = $("hintBtn");   // once you've missed, the big help takes over
+  if (hb) hb.remove();
   if ($("showBtn")) return;
   const b = document.createElement("button");
   b.className = "btn soft"; b.id = "showBtn"; b.textContent = "Show me 💡";
@@ -870,11 +974,11 @@ function openChest(){
   const coins = 8 + 4 * levelStars;
   state.coins += coins;
 
-  // a surprise present (a cute basic) flies to the post office 📮
+  // a surprise present (a cute basic) flies to the post office 📮 (6 pigeonholes!)
   const candidates = CATALOG.filter(c => c.price <= 45 && !state.owned.includes(c.id) && !state.mail.includes(c.id));
   let giftMsg = "";
   lastGift = null;
-  if (candidates.length && levelStars > 0){
+  if (candidates.length && levelStars > 0 && state.mail.length < 6){
     lastGift = pick(candidates);
     state.mail.push(lastGift.id);
     giftMsg = "<br>🎁 A mystery present flew to the Post Office!";
@@ -941,17 +1045,20 @@ function buy(c){
 function renderPost(){
   const list = $("maillist");
   list.innerHTML = "";
-  if (!state.mail.length){
-    list.innerHTML = '<div class="empty" style="grid-column:1/-1;">No post today! Win levels to get presents 🎁</div>';
-    return;
-  }
-  state.mail.forEach(id => {
+  // 6 pigeonholes — presents fill them up, empty ones wait for your next win!
+  state.mail.slice(0, 6).forEach(id => {
     const d = document.createElement("div");
     d.className = "gift";
     d.innerHTML = GIFT_ART + '<div class="gname">Tap to unwrap!</div>';
     d.onclick = () => unwrap(id, d);
     list.appendChild(d);
   });
+  for (let k = state.mail.length; k < 6; k++){
+    const d = document.createElement("div");
+    d.className = "mailslot";
+    d.textContent = "🎁 space for a prize!";
+    list.appendChild(d);
+  }
 }
 function unwrap(id, el){
   const c = item(id);
@@ -974,24 +1081,54 @@ function toggleBar(){
   $("bartab").textContent = bar.classList.contains("closed") ? "🎒 My Stuff ▾" : "🎒 My Stuff ▴";
 }
 function renderHouse(){
+  renderRoomTabs();
   renderRoom();
   renderBar();
   updateHUD();
 }
-const SEATS = ["fur_sofa","fur_chair","fur_bed","fur_castle","fur_tub"];
+const SEATS = ["fur_sofa","fur_chair","fur_beanbag"];   // sit on these
+const LIE = ["fur_bed","fur_castle"];                    // lie down on these 😴
+const GLOWS = ["fur_lamp","fur_tv","fur_oven"];          // these switch on
 let sitting = null;   // where the avatar is sitting right now (not saved)
+
+// ---- The rooms of the house 🏠 (upstairs + downstairs!) ----
+const ROOMS = [
+  {id:"bedroom", name:"Bedroom",     floor:"up"},
+  {id:"bath",    name:"Bathroom",    floor:"up"},
+  {id:"living",  name:"Living Room", floor:"down"},
+  {id:"kitchen", name:"Kitchen",     floor:"down"},
+  {id:"garden",  name:"Garden",      floor:"out"}
+];
+let curRoom = "living";
+function roomOf(p){ return p.room || "living"; }
+function renderRoomTabs(){
+  const row = (label, floor) => '<div class="rtrow"><span class="rtlabel">' + label + '</span>' +
+    ROOMS.filter(r => r.floor === floor).map(r =>
+      '<button class="rtab' + (curRoom === r.id ? ' on' : '') + '" onclick="goRoom(\'' + r.id + '\')">' +
+      r.name + '</button>').join('') + '</div>';
+  $("roomtabs").innerHTML = row("Upstairs 🌙", "up") + row("Downstairs ☀️", "down") + row("Outside 🌼", "out");
+}
+function goRoom(id){
+  if (curRoom === id) return;
+  standUp();
+  curRoom = id;
+  SFX.click();
+  renderHouse();
+}
 
 function renderRoom(){
   const room = $("room");
   room.querySelectorAll(".placed").forEach(e => e.remove());
-  // evening mode: any switched-on lamp makes the room go cosy-dark
-  room.classList.toggle("evening", state.placed.some(p => p.id === "fur_lamp" && p.on));
+  // evening mode: a switched-on lamp makes THIS room go cosy-dark
+  const evening = state.placed.some(p => p.id === "fur_lamp" && p.on && roomOf(p) === curRoom);
+  room.className = "room " + curRoom + (evening ? " evening" : "");
   state.placed.forEach((p, idx) => {
+    if (roomOf(p) !== curRoom) return;
     const c = item(p.id);
     if (!c) return;
     const d = document.createElement("div");
     d.className = "placed" + (c.kind === "pet" ? " pet" : "") +
-                  ((p.on && (p.id === "fur_lamp" || p.id === "fur_tv")) ? " lit" : "");
+                  ((p.on && GLOWS.includes(p.id)) ? " lit" : "");
     d.innerHTML = ART[p.id];
     d.style.left = p.x + "%";
     d.style.top = p.y + "%";
@@ -1043,6 +1180,37 @@ function interact(idx, el){
     SFX.pop();
     floaty(p, pick(["🍓","🧁","🍪","🧃","🍉"]));
     $("houseHint").textContent = "Snack time! Yummy!";
+  } else if (p.id === "fur_oven"){
+    SFX.click();
+    p.on = !p.on; save(); renderRoom();
+    if (p.on) setTimeout(() => floaty(p, "🍪"), 200);
+    $("houseHint").textContent = p.on ? "Baking cookies! 🍪✨" : "Ding! Cookies are ready!";
+  } else if (p.id === "fur_pancakes" || p.id === "fur_pizza" || p.id === "fur_icecream"){
+    SFX.pop();
+    el.classList.remove("wiggle"); void el.offsetWidth; el.classList.add("wiggle");
+    floaty(p, pick(["😋","✨","💖"]));
+    $("houseHint").textContent = "Mmmm, delicious!";
+  } else if (p.id === "fur_swing"){
+    SFX.pop();
+    sitOn(p);
+    $("houseHint").textContent = "Wheee!! Tap the grass to hop off. 🌈";
+  } else if (p.id === "fur_tree"){
+    SFX.pop();
+    el.classList.remove("wiggle"); void el.offsetWidth; el.classList.add("wiggle");
+    floaty(p, "🍎");
+    $("houseHint").textContent = "An apple fell down! Crunch!";
+  } else if (p.id === "fur_pond"){
+    SFX.bubbles();
+    floaty(p, pick(["💦","🦆"]));
+    $("houseHint").textContent = "Splash! The ducky says quack! 🦆";
+  } else if (p.id === "fur_flowers"){
+    SFX.pet();
+    floaty(p, pick(["🦋","🐝","🌸"]));
+    $("houseHint").textContent = "A little visitor loves your flowers!";
+  } else if (LIE.includes(p.id)){
+    SFX.bubbles();
+    lieOn(p);
+    $("houseHint").textContent = "Sweet dreams! Tap the floor to wake up. 😴";
   } else if (p.id === "fur_tub"){
     SFX.bubbles();
     sitOn(p);
@@ -1067,8 +1235,20 @@ function sitOn(p){
   you.style.top = p.y + "%";
   you.style.bottom = "auto";
   // in FRONT of the seat (Sunny's note!): overlap its cushion and sit on top
-  you.style.transform = "translate(-50%,-88%)";
+  you.style.transform = "translate(-50%,-90%) scale(.85)";
   you.style.zIndex = "10";
+}
+// lying down on a bed 😴 — sideways, head on the pillow!
+function lieOn(p){
+  sitting = p;
+  const you = $("roomYou");
+  you.classList.add("sitting");
+  you.style.left = p.x + "%";
+  you.style.top = p.y + "%";
+  you.style.bottom = "auto";
+  you.style.transform = "translate(-50%,-66%) rotate(-90deg) scale(.78)";
+  you.style.zIndex = "10";
+  [200, 900].forEach(ms => setTimeout(() => floaty(p, "💤"), ms));
 }
 function standUp(){
   if (!sitting) return;
@@ -1123,7 +1303,7 @@ $("room").addEventListener("click", (e) => {
   let y = ((e.clientY - r.top) / r.height) * 100;
   x = Math.max(8, Math.min(92, x));
   y = Math.max(14, Math.min(92, y));
-  state.placed.push({ id: selectedChip, x: Math.round(x), y: Math.round(y) });
+  state.placed.push({ id: selectedChip, x: Math.round(x), y: Math.round(y), room: curRoom });
   selectedChip = null;
   SFX.pop();
   save();
