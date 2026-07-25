@@ -74,11 +74,17 @@ screen time. Wholesome, fair, and proud-making. 🍓🧂
 - **Sunny works from her iPad** (claude.ai/code) — the fun, creative building.
 - **Her grown-up helper works from the Mac** — the grown-up controls: creating repos,
   reviewing and merging to `main`, publishing (GitHub Pages), and holding anything private.
-- **Branch model:** she builds on a **`dev`** branch. **`main` is protected** and only changes
-  through the grown-up's review/merge. Any public "play link" is served from **`main`**, so it
-  stays stable even as `dev` changes.
-- In-session permission prompts are for *reducing friction*, not for safety — the real
-  guardrails are branch protection and repo settings that only the grown-up controls.
+- **Publishing is pre-approved — don't gatekeep it.** When the designer asks to publish /
+  save it / make it live → do it cheerfully: verify it actually works, then commit and push
+  to `main`. GitHub Pages redeploys the play link in about a minute and her home-screen icon
+  updates itself. Do NOT route publishing to a grown-up or make her wait — Dad reviews the
+  repo *afterwards* (post-hoc audit) instead of gating merges. If a `git push` approval
+  prompt appears in-session, allowing it is fine.
+- The grown-up side still owns: repo settings, the audits, and `assignments.json` (shipped
+  separately by HQ — never modify it in your pushes). Boundaries unchanged: no personal or
+  identifying info ever (the designer goes by **Sunny** here), everything wholesome and
+  age-appropriate; real money, new accounts/services, or deleting the project still need a
+  grown-up.
 
 ---
 
@@ -98,3 +104,8 @@ screen time. Wholesome, fair, and proud-making. 🍓🧂
   bigger 33-task pack added. Sunny designs on `dev`; the grown-up reviews and merges to `main`.
 - **Ideas she might want next (let HER choose):** points or streaks · a friendly mascot ·
   sounds · celebration animations · new task types (match_pairs, odd_one_out…).
+
+## 🚀 How I publish (reminder card)
+
+Save on `main` → the play link updates in about a minute. That's the whole publish
+button. (Test first; the live game never breaks.)
