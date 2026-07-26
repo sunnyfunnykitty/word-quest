@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-26",
   "for": "word-quest",
-  "batch": "vocab-public-v6",
+  "batch": "vocab-public-v7",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
@@ -423,6 +423,186 @@
       ],
       "answer": "Where",
       "teach": "'Where' asks about a place — it has 'here' hiding inside it. 'Were' is a doing word: they were happy."
+    },
+    {
+      "id": "v075",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'enormous - absolutely huge'?",
+      "options": [
+        "average",
+        "minute",
+        "hollow",
+        "immense"
+      ],
+      "answer": "immense",
+      "teach": "Immense means vast and enormous - an immense mountain seems to fill the whole sky."
+    },
+    {
+      "id": "v076",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'plain, strict and without comfort'?",
+      "options": [
+        "austere",
+        "cluttered",
+        "luxurious",
+        "cheerful"
+      ],
+      "answer": "austere",
+      "teach": "An austere room is bare and simple: one bed, one candle, no frills."
+    },
+    {
+      "id": "v077",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 2,
+      "prompt": "Which word means 'kind and generous'?",
+      "options": [
+        "benevolent",
+        "greedy",
+        "cruel",
+        "timid"
+      ],
+      "answer": "benevolent",
+      "teach": "A benevolent person wishes you well and gives freely (bene = good)."
+    },
+    {
+      "id": "v078",
+      "type": "choose_best_word",
+      "target_skill": "word_relationships",
+      "difficulty": 3,
+      "prompt": "Which word means 'wishing to do evil or harm'?",
+      "options": [
+        "gentle",
+        "malevolent",
+        "honest",
+        "friendly"
+      ],
+      "answer": "malevolent",
+      "teach": "Malevolent means wanting to cause harm - the exact opposite of benevolent (mal = bad)."
+    },
+    {
+      "id": "v079",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'spiteful and wanting revenge'?",
+      "options": [
+        "forgiving",
+        "cheerful",
+        "generous",
+        "vindictive"
+      ],
+      "answer": "vindictive",
+      "teach": "A vindictive person nurses a grudge and plots to get their own back."
+    },
+    {
+      "id": "v080",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'passionate and enthusiastic'?",
+      "options": [
+        "half-hearted",
+        "unwilling",
+        "ardent",
+        "sleepy"
+      ],
+      "answer": "ardent",
+      "teach": "An ardent fan cheers with their whole heart - ardent means burning with keenness."
+    },
+    {
+      "id": "v081",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 2,
+      "prompt": "Which word means 'silly and not serious'?",
+      "options": [
+        "urgent",
+        "frivolous",
+        "serious",
+        "sensible"
+      ],
+      "answer": "frivolous",
+      "teach": "Frivolous means light and silly - a frivolous idea is fun rather than important."
+    },
+    {
+      "id": "v082",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'completely fascinated and spellbound'?",
+      "options": [
+        "puzzled",
+        "enthralled",
+        "bored",
+        "annoyed"
+      ],
+      "answer": "enthralled",
+      "teach": "Enthralled means gripped and spellbound - so fascinated you forget everything else."
+    },
+    {
+      "id": "v083",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'badly built and falling apart'?",
+      "options": [
+        "ramshackle",
+        "sturdy",
+        "brand-new",
+        "elegant"
+      ],
+      "answer": "ramshackle",
+      "teach": "A ramshackle hut leans, creaks and looks ready to collapse at any moment."
+    },
+    {
+      "id": "v084",
+      "type": "choose_best_word",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Which word means 'abandoned and left to fall apart'?",
+      "options": [
+        "spotless",
+        "crowded",
+        "derelict",
+        "bustling"
+      ],
+      "answer": "derelict",
+      "teach": "A derelict building has been left empty and neglected for years."
+    },
+    {
+      "id": "v085",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Which word means 'hidden or secret'?",
+      "options": [
+        "covert",
+        "obvious",
+        "noisy",
+        "public"
+      ],
+      "answer": "covert",
+      "teach": "A covert plan is secret and hidden - the opposite of 'overt', which is out in the open."
+    },
+    {
+      "id": "v086",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'made very poor'?",
+      "options": [
+        "impoverished",
+        "wealthy",
+        "cheerful",
+        "generous"
+      ],
+      "answer": "impoverished",
+      "teach": "Impoverished means made very poor - the long drought left the farmers impoverished."
     }
   ]
 }
