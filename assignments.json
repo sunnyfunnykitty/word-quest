@@ -1,242 +1,428 @@
 {
-  "generated_at": "2026-07-25",
+  "generated_at": "2026-07-26",
   "for": "word-quest",
-  "batch": "vocab-public-v5",
+  "batch": "vocab-public-v6",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
-      "id": "v013",
+      "id": "v001",
       "type": "choose_best_word",
-      "target_skill": "shades_of_meaning",
-      "difficulty": 3,
-      "prompt": "Word detective! Which ONE word fits BOTH clues: 'a harbour for ships' AND 'the left side of a boat'?",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to waste money or time when you really shouldn't'?",
       "options": [
-        "deck",
-        "port",
-        "bay",
-        "dock"
+        "hoard",
+        "rationalise",
+        "squander",
+        "convey"
       ],
-      "answer": "port",
-      "teach": "Port is the harbour AND the boat's left side. One word, two jobs — English loves a doubler."
+      "answer": "squander",
+      "teach": "To squander pocket money is to blow it all in one go — the show-off opposite of saving."
     },
     {
-      "id": "v015",
+      "id": "v002",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to tempt someone with something lovely'?",
+      "options": [
+        "hinder",
+        "entice",
+        "offend",
+        "endure"
+      ],
+      "answer": "entice",
+      "teach": "The smell of warm cookies can entice anyone into the kitchen. Tempt, attract, entice — all magnets!"
+    },
+    {
+      "id": "v003",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to officially say NO to a plan'?",
+      "options": [
+        "permit",
+        "accrue",
+        "veto",
+        "propose"
+      ],
+      "answer": "veto",
+      "teach": "'Permit' means allow — veto is its bossy opposite: one powerful NO that blocks the plan."
+    },
+    {
+      "id": "v004",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "Which word means 'to stop completely'?",
+      "options": [
+        "cease",
+        "commence",
+        "romp",
+        "linger"
+      ],
+      "answer": "cease",
+      "teach": "When rain ceases, it stops. 'Cease' is a posh full stop — and 'commence' kicks things off."
+    },
+    {
+      "id": "v005",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'a huge, noisy crowd'?",
+      "options": [
+        "sliver",
+        "morsel",
+        "hush",
+        "horde"
+      ],
+      "answer": "horde",
+      "teach": "A horde of fans mobbed the stage! (Sneaky cousin: 'hoard' with an A is treasure you keep.)"
+    },
+    {
+      "id": "v007",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to keep going through something hard without giving up'?",
+      "options": [
+        "endure",
+        "blither",
+        "vanish",
+        "dawdle"
+      ],
+      "answer": "endure",
+      "teach": "Explorers endure freezing nights — they grit their teeth and carry on. You endure a very long queue!"
+    },
+    {
+      "id": "v008",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'looking down and feeling gloomy'?",
+      "options": [
+        "jaunty",
+        "astute",
+        "downcast",
+        "valiant"
+      ],
+      "answer": "downcast",
+      "teach": "Downcast eyes stare at shoes. 'Jaunty' is the happy opposite — chin up, cap at an angle!"
+    },
+    {
+      "id": "v009",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to get in the way and slow someone down'?",
+      "options": [
+        "hinder",
+        "adhere",
+        "entice",
+        "assist"
+      ],
+      "answer": "hinder",
+      "teach": "A pebble in your shoe hinders a runner. Its rhyme-twin 'hamper' means exactly the same!"
+    },
+    {
+      "id": "v010",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 1,
+      "prompt": "Which word means 'to run with quick little steps, like a squirrel'?",
+      "options": [
+        "trudge",
+        "scamper",
+        "slump",
+        "loiter"
+      ],
+      "answer": "scamper",
+      "teach": "Squirrels scamper, tired hikers trudge. The word sounds as quick as the feet!"
+    },
+    {
+      "id": "v017",
       "type": "choose_best_word",
       "target_skill": "synonyms",
-      "difficulty": 2,
-      "prompt": "A 'plight' is...",
+      "difficulty": 3,
+      "prompt": "A 'cryptic' message is...",
       "options": [
-        "a difficult situation",
-        "a kind of dance",
-        "a small bird",
-        "a bright light"
+        "one with a hidden meaning",
+        "one written in capitals",
+        "one that is very long",
+        "one sent by post"
       ],
-      "answer": "a difficult situation",
-      "teach": "The knight rescued the villagers from their plight — their sticky situation."
+      "answer": "one with a hidden meaning",
+      "teach": "Cryptic = puzzling, hidden. To decipher a cryptic note is to crack its code — detective work!"
     },
     {
-      "id": "v024",
+      "id": "v019",
+      "type": "choose_best_word",
+      "target_skill": "synonyms",
+      "difficulty": 3,
+      "prompt": "Your 'visage' is your...",
+      "options": [
+        "shadow",
+        "signature",
+        "voice",
+        "face"
+      ],
+      "answer": "face",
+      "teach": "A knight's grim visage = his stern face. Fancy word, simple meaning — examiners love it."
+    },
+    {
+      "id": "v021",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The sky turned a brilliant ___ over the summer sea.",
+      "options": [
+        "sallow",
+        "taut",
+        "lank",
+        "azure"
+      ],
+      "answer": "azure",
+      "teach": "Azure = bright sky-blue. A painter's word — it makes a sentence glow."
+    },
+    {
+      "id": "v022",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The old oak's ___ branches twisted like a witch's fingers.",
+      "options": [
+        "gnarled",
+        "legible",
+        "tropical",
+        "gleaming"
+      ],
+      "answer": "gnarled",
+      "teach": "Gnarled = twisted and knobbly. Perfect for old trees, old roots, and wizard's hands."
+    },
+    {
+      "id": "v026",
       "type": "odd_one_out",
       "target_skill": "word_relationships",
       "difficulty": 2,
-      "prompt": "Three of these pull you closer. Which one pushes you away?",
+      "prompt": "Which word is the odd one out?",
       "options": [
-        "tempt",
-        "deter",
-        "attract",
-        "entice"
+        "cease",
+        "halt",
+        "stop",
+        "commence"
       ],
-      "answer": "deter",
-      "teach": "Entice, tempt and attract are magnets — deter is the force field that stops you."
+      "answer": "commence",
+      "teach": "Cease, halt and stop all slam the brakes — commence starts the engine!"
     },
     {
-      "id": "v049",
+      "id": "v027",
       "type": "choose_best_word",
-      "target_skill": "speech_punctuation",
+      "target_skill": "meaning_in_context",
       "difficulty": 2,
-      "prompt": "Which one is written correctly?",
+      "prompt": "If you 'smell a rat', you...",
       "options": [
-        "\"I'm here\" said Ben.",
-        "\"I'm here\", said Ben.",
-        "\"I'm here,\" said Ben.",
-        "\"I'm here.\" said Ben."
+        "have a cold",
+        "are very hungry",
+        "need to clean your room",
+        "suspect something is wrong"
       ],
-      "answer": "\"I'm here,\" said Ben.",
-      "teach": "The comma tucks INSIDE the speech marks, right after the last word spoken — then a little 'said'."
+      "answer": "suspect something is wrong",
+      "teach": "No actual rats involved! This idiom means 'something fishy is going on'. (Also fishy — English, honestly!)"
     },
     {
-      "id": "v050",
+      "id": "v062",
       "type": "choose_best_word",
-      "target_skill": "speech_punctuation",
+      "target_skill": "meaning_in_context",
       "difficulty": 2,
-      "prompt": "Where does the question mark go?",
+      "prompt": "Which word means 'to give way or give in'?",
       "options": [
-        "\"Are you sure.\" she asked.",
-        "\"Are you sure\"? she asked.",
-        "\"Are you sure?\" she asked.",
-        "\"Are you sure?\", she asked."
+        "linger",
+        "boast",
+        "yield",
+        "seize"
       ],
-      "answer": "\"Are you sure?\" she asked.",
-      "teach": "If the SPOKEN words ask a question, the ? goes inside the speech marks — and you don't need a comma as well."
+      "answer": "yield",
+      "teach": "To yield is to give way — a car yields at a junction. (It also means to produce: a field yields crops.)"
     },
     {
-      "id": "v051",
+      "id": "v063",
       "type": "choose_best_word",
-      "target_skill": "speech_punctuation",
+      "target_skill": "meaning_in_context",
       "difficulty": 2,
-      "prompt": "Which is punctuated correctly?",
+      "prompt": "Which word means 'one level of several stacked up'?",
       "options": [
-        "\"Look out!,\" yelled Mia.",
-        "\"Look out\"! yelled Mia.",
-        "\"Look out!\" yelled Mia.",
-        "\"Look out.\" yelled Mia."
+        "tier",
+        "crown",
+        "ledge",
+        "beam"
       ],
-      "answer": "\"Look out!\" yelled Mia.",
-      "teach": "A shout keeps its ! INSIDE the speech marks, hugging the words that are shouted."
+      "answer": "tier",
+      "teach": "A tier is one layer in a stack — a three-tier cake, or the tiers of seats in a stadium."
     },
     {
-      "id": "v052",
+      "id": "v064",
       "type": "choose_best_word",
-      "target_skill": "speech_punctuation",
-      "difficulty": 3,
-      "prompt": "When the 'she said' comes FIRST, which is correct?",
+      "target_skill": "synonyms",
+      "difficulty": 1,
+      "prompt": "Which word means 'gentle — not strong or harsh'?",
       "options": [
-        "She smiled and said, \"come in.\"",
-        "She smiled and said \"Come in.\"",
-        "She smiled and said. \"Come in.\"",
-        "She smiled and said, \"Come in.\""
+        "mild",
+        "blazing",
+        "bitter",
+        "fierce"
       ],
-      "answer": "She smiled and said, \"Come in.\"",
-      "teach": "When the 'she said' comes first, pop a comma before the speech marks, then start the talking with a capital letter."
+      "answer": "mild",
+      "teach": "Mild weather is soft and gentle; a mild curry won't burn your tongue."
     },
     {
-      "id": "v053",
+      "id": "v065",
+      "type": "choose_best_word",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "A large group of fish moving together is a ___.",
+      "options": [
+        "flock",
+        "shoal",
+        "swarm",
+        "herd"
+      ],
+      "answer": "shoal",
+      "teach": "Fish swim in a shoal, birds fly in a flock, bees buzz in a swarm — collect the group words!"
+    },
+    {
+      "id": "v066",
       "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "After the storm, the sea began to ___ into huge waves.",
+      "options": [
+        "swell",
+        "settle",
+        "freeze",
+        "shrink"
+      ],
+      "answer": "swell",
+      "teach": "To swell is to grow bigger — a river swells after rain, and the sea swells into waves."
+    },
+    {
+      "id": "v067",
+      "type": "fill_the_gap",
+      "target_skill": "confusable_words",
+      "difficulty": 2,
+      "prompt": "She is taller ___ her brother. (comparing two things)",
+      "options": [
+        "then",
+        "tan",
+        "thn",
+        "than"
+      ],
+      "answer": "than",
+      "teach": "'Than' compares two things (bigger than). 'Then' is about time — first this, then that."
+    },
+    {
+      "id": "v068",
+      "type": "fill_the_gap",
+      "target_skill": "confusable_words",
+      "difficulty": 3,
+      "prompt": "Take a deep ___ and relax. (the air you take in)",
+      "options": [
+        "breath",
+        "breth",
+        "breaths",
+        "breathe"
+      ],
+      "answer": "breath",
+      "teach": "'Breath' (rhymes with death) is the air — a naming word. 'Breathe' (rhymes with seethe) is the action."
+    },
+    {
+      "id": "v069",
+      "type": "fill_the_gap",
+      "target_skill": "confusable_words",
+      "difficulty": 2,
+      "prompt": "Don't ___ off the path — you'll get lost! (to roam)",
+      "options": [
+        "wanda",
+        "wandor",
+        "wonder",
+        "wander"
+      ],
+      "answer": "wander",
+      "teach": "'Wander' (rhymes with ponder) means to roam about. 'Wonder' means to think or to be amazed."
+    },
+    {
+      "id": "v070",
+      "type": "fill_the_gap",
+      "target_skill": "word_class",
+      "difficulty": 1,
+      "prompt": "She had ___ amazing idea!",
+      "options": [
+        "an",
+        "and",
+        "a",
+        "one"
+      ],
+      "answer": "an",
+      "teach": "Use 'an' before a vowel sound: an apple, an amazing idea. Use 'a' before a consonant: a book."
+    },
+    {
+      "id": "v071",
+      "type": "choose_best_word",
       "target_skill": "apostrophes",
       "difficulty": 2,
-      "prompt": "The robot lifted ___ arm. (the arm belonging to it)",
+      "prompt": "Which one shows the wings belonging to ONE dragon?",
       "options": [
-        "its'",
-        "it is",
-        "it's",
-        "its"
+        "the dragons' wings",
+        "the dragon,s wings",
+        "the dragons wings",
+        "the dragon's wings"
       ],
-      "answer": "its",
-      "teach": "'Its' with no apostrophe means 'belonging to it'. 'It's' is ONLY ever short for 'it is'."
+      "answer": "the dragon's wings",
+      "teach": "One dragon owning something takes 's — the dragon's wings. (No apostrophe just means MORE than one dragon.)"
     },
     {
-      "id": "v054",
-      "type": "fill_the_gap",
-      "target_skill": "homophones",
-      "difficulty": 2,
-      "prompt": "___ going to love this level! (you are)",
-      "options": [
-        "You're",
-        "Yore",
-        "Youre",
-        "Your"
-      ],
-      "answer": "You're",
-      "teach": "'You're' is short for 'you are'. 'Your' means belonging to you, like 'your book'."
-    },
-    {
-      "id": "v055",
-      "type": "fill_the_gap",
-      "target_skill": "homophones",
-      "difficulty": 2,
-      "prompt": "The children grabbed ___ coats. (the coats belonging to them)",
-      "options": [
-        "there",
-        "their",
-        "they're",
-        "thier"
-      ],
-      "answer": "their",
-      "teach": "'Their' = belonging to them. 'There' = a place (over there). 'They're' = they are."
-    },
-    {
-      "id": "v056",
-      "type": "fill_the_gap",
-      "target_skill": "homophones",
-      "difficulty": 1,
-      "prompt": "It is ___ hot to play outside. (more than enough)",
-      "options": [
-        "two",
-        "tooo",
-        "to",
-        "too"
-      ],
-      "answer": "too",
-      "teach": "'Too' with two O's means 'more than enough' or 'also'. 'To' points somewhere, like 'to school'."
-    },
-    {
-      "id": "v057",
-      "type": "choose_best_word",
-      "target_skill": "plurals",
-      "difficulty": 2,
-      "prompt": "More than one daisy — which spelling?",
-      "options": [
-        "daisies",
-        "daisyes",
-        "daisys",
-        "daises"
-      ],
-      "answer": "daisies",
-      "teach": "When a word ends in 'y', swap the y for 'ies': daisy→daisies, story→stories, party→parties."
-    },
-    {
-      "id": "v058",
-      "type": "fix_the_sentence",
-      "target_skill": "subject_verb_agreement",
-      "difficulty": 2,
-      "prompt": "Fix this sentence: The text say she is tired.",
-      "answer": "The text says she is tired.",
-      "teach": "One person doing something now needs 's' on the verb: the text SAYS, she RUNS, he PLAYS."
-    },
-    {
-      "id": "v059",
-      "type": "choose_best_word",
-      "target_skill": "commas",
-      "difficulty": 3,
-      "prompt": "Which sentence is punctuated correctly?",
-      "options": [
-        "Although the robot is clever, it needs charging.",
-        "Although, the robot is clever, it needs charging.",
-        "Although the robot is clever it needs charging.",
-        "Although, the robot is clever it needs charging."
-      ],
-      "answer": "Although the robot is clever, it needs charging.",
-      "teach": "'Although' hugs its whole idea first — the comma waits until that idea finishes, not straight after 'although'."
-    },
-    {
-      "id": "v060",
+      "id": "v072",
       "type": "choose_best_word",
       "target_skill": "sentence_demarcation",
       "difficulty": 3,
-      "prompt": "Sentence detective! Which one is a COMPLETE sentence?",
+      "prompt": "Which sentence is joined correctly?",
       "options": [
-        "Because it was freezing cold.",
-        "The firebird soared into the golden sky.",
-        "Which glowed in the dark.",
-        "Scrambling away into the night."
+        "It was raining. so we stayed inside.",
+        "It was raining, we stayed inside.",
+        "It was raining we stayed inside.",
+        "It was raining, so we stayed inside."
       ],
-      "answer": "The firebird soared into the golden sky.",
-      "teach": "A whole sentence needs someone AND what they do. 'Scrambling away…' — who? doing what? Finish the thought!"
+      "answer": "It was raining, so we stayed inside.",
+      "teach": "Two whole sentences can't be glued with just a comma — pop a joining word (so, and, but) after it."
     },
     {
-      "id": "v061",
+      "id": "v073",
       "type": "choose_best_word",
-      "target_skill": "high_freq_misspellings",
-      "difficulty": 1,
-      "prompt": "Which is correct?",
+      "target_skill": "speech_punctuation",
+      "difficulty": 3,
+      "prompt": "When 'she said' splits the speech, which is correct?",
       "options": [
-        "every night",
-        "everynight",
-        "every-night",
-        "evry night"
+        "\"Come here,\" she said \"quickly.\"",
+        "\"Come here\" she said \"quickly.\"",
+        "\"Come here\", she said, \"quickly.\"",
+        "\"Come here,\" she said, \"quickly.\""
       ],
-      "answer": "every night",
-      "teach": "'Every' likes its own space: every night, every day, every time — always two words."
+      "answer": "\"Come here,\" she said, \"quickly.\"",
+      "teach": "Comma inside the first speech marks, another after 'said', then reopen the speech marks for the rest."
+    },
+    {
+      "id": "v074",
+      "type": "fill_the_gap",
+      "target_skill": "homophones",
+      "difficulty": 2,
+      "prompt": "___ did you put my shoes? (asking about a place)",
+      "options": [
+        "Where",
+        "Wheir",
+        "Wear",
+        "Were"
+      ],
+      "answer": "Where",
+      "teach": "'Where' asks about a place — it has 'here' hiding inside it. 'Were' is a doing word: they were happy."
     }
   ]
 }
