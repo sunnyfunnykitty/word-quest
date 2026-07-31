@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-26",
+  "generated_at": "2026-07-31",
   "for": "word-quest",
-  "batch": "vocab-public-v7",
+  "batch": "vocab-public-v8",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
@@ -603,6 +603,231 @@
       ],
       "answer": "impoverished",
       "teach": "Impoverished means made very poor - the long drought left the farmers impoverished."
+    },
+    {
+      "id": "v087",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'later than it should be'?",
+      "options": [
+        "sudden",
+        "early",
+        "tardy",
+        "prompt"
+      ],
+      "answer": "tardy",
+      "teach": "Tardy means late - a tardy reply turns up long after you hoped for it. Its opposite is prompt, which means bang on time."
+    },
+    {
+      "id": "v088",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The crowd came ___ forward the moment the band walked on stage.",
+      "options": [
+        "drifting",
+        "surging",
+        "trickling",
+        "pausing"
+      ],
+      "answer": "surging",
+      "teach": "Surging means rising and rushing forward in one powerful wave - like the sea, or a whole crowd moving at once."
+    },
+    {
+      "id": "v089",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 2,
+      "prompt": "Which word means 'being far too pleased with yourself'?",
+      "options": [
+        "patience",
+        "modesty",
+        "vanity",
+        "kindness"
+      ],
+      "answer": "vanity",
+      "teach": "Vanity is being too proud of yourself, especially of how you look. Modesty is its quiet opposite."
+    },
+    {
+      "id": "v090",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'a false reason given to hide the real one'?",
+      "options": [
+        "pretext",
+        "promise",
+        "reminder",
+        "apology"
+      ],
+      "answer": "pretext",
+      "teach": "A pretext is a cover story: he called round on the pretext of returning a book, when really he wanted to see the puppy."
+    },
+    {
+      "id": "v091",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 3,
+      "prompt": "Three of these point outwards, towards other people. Which one points back at yourself?",
+      "options": [
+        "sympathy",
+        "kindness",
+        "egotism",
+        "generosity"
+      ],
+      "answer": "egotism",
+      "teach": "Egotism means thinking and talking about yourself far too much. The other three are all about noticing everybody else."
+    },
+    {
+      "id": "v092",
+      "type": "choose_best_word",
+      "target_skill": "figurative_effect",
+      "difficulty": 3,
+      "prompt": "'I have told you a million times!' Which writing technique is that?",
+      "options": [
+        "personification",
+        "irony",
+        "onomatopoeia",
+        "hyperbole"
+      ],
+      "answer": "hyperbole",
+      "teach": "Hyperbole is enormous exaggeration for effect. (Irony says the opposite of what it means; personification treats a thing like a person; onomatopoeia sounds like its own noise, such as buzz.)"
+    },
+    {
+      "id": "v093",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "After the long walk we were ___ and ate every last sandwich.",
+      "options": [
+        "ravenous",
+        "sleepy",
+        "cheerful",
+        "patient"
+      ],
+      "answer": "ravenous",
+      "teach": "Ravenous means extremely hungry - far hungrier than merely peckish, and much too hungry to share."
+    },
+    {
+      "id": "v094",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 2,
+      "prompt": "Which word describes someone who is showily self-important?",
+      "options": [
+        "pompous",
+        "shy",
+        "humble",
+        "generous"
+      ],
+      "answer": "pompous",
+      "teach": "A pompous person puts on grand airs and rather loves the sound of their own voice. Humble is the opposite."
+    },
+    {
+      "id": "v095",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'perfectly peaceful and lovely'?",
+      "options": [
+        "chaotic",
+        "cramped",
+        "dreary",
+        "idyllic"
+      ],
+      "answer": "idyllic",
+      "teach": "An idyllic scene is picture-perfect and calm: a meadow, a stream and not a single worry in sight."
+    },
+    {
+      "id": "v096",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'completely harmless'?",
+      "options": [
+        "fierce",
+        "dangerous",
+        "poisonous",
+        "innocuous"
+      ],
+      "answer": "innocuous",
+      "teach": "Innocuous means harmless - an innocuous little spider that would not hurt a fly (well, perhaps one fly)."
+    },
+    {
+      "id": "v097",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "The garden was full of ___ touches: a blue door in a tree trunk and a teapot for a birdhouse.",
+      "options": [
+        "gloomy",
+        "ordinary",
+        "tidy",
+        "whimsical"
+      ],
+      "answer": "whimsical",
+      "teach": "Whimsical means playfully odd and full of imagination - charmingly not what you expected."
+    },
+    {
+      "id": "v098",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "She took one ___ step onto the frozen pond, listening hard for a creak.",
+      "options": [
+        "hasty",
+        "tentative",
+        "heavy",
+        "confident"
+      ],
+      "answer": "tentative",
+      "teach": "Tentative means hesitant and careful, as though checking whether something is safe."
+    },
+    {
+      "id": "v099",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'a showy display of boldness'?",
+      "options": [
+        "bravado",
+        "patience",
+        "timidity",
+        "honesty"
+      ],
+      "answer": "bravado",
+      "teach": "Bravado is swaggering and putting on a brave face, often when you feel far less brave inside."
+    },
+    {
+      "id": "v100",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Which word describes someone extremely mean with money?",
+      "options": [
+        "generous",
+        "careless",
+        "parsimonious",
+        "wealthy"
+      ],
+      "answer": "parsimonious",
+      "teach": "Parsimonious means unwilling to part with even a penny. A generous person is the exact opposite."
+    },
+    {
+      "id": "v101",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Three of these mean serious trouble. Which one means playful mischief?",
+      "options": [
+        "catastrophe",
+        "disaster",
+        "shenanigans",
+        "emergency"
+      ],
+      "answer": "shenanigans",
+      "teach": "Shenanigans are silly goings-on and playful mischief - the sort that end in giggles rather than trouble."
     }
   ]
 }
