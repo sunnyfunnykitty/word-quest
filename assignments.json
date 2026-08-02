@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-31",
+  "generated_at": "2026-08-01",
   "for": "word-quest",
-  "batch": "vocab-public-v8",
+  "batch": "vocab-public-v9",
   "note": "Practice pack: 11+ vocabulary tasks with fixed answers. Generic content - contains no personal information.",
   "tasks": [
     {
@@ -828,6 +828,516 @@
       ],
       "answer": "shenanigans",
       "teach": "Shenanigans are silly goings-on and playful mischief - the sort that end in giggles rather than trouble."
+    },
+    {
+      "id": "v102",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'a charge or tax added to goods'?",
+      "options": [
+        "refund",
+        "tariff",
+        "bargain",
+        "discount"
+      ],
+      "answer": "tariff",
+      "teach": "A tariff is a charge or tax, and it can also mean a printed list of prices - the tariff by the ferry door tells you what a ticket costs."
+    },
+    {
+      "id": "v103",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The robin had only a ___ scattering of crumbs to see it through the frost.",
+      "options": [
+        "meagre",
+        "endless",
+        "ample",
+        "generous"
+      ],
+      "answer": "meagre",
+      "teach": "Meagre means far too small in amount - a meagre helping leaves you quietly hoping for seconds."
+    },
+    {
+      "id": "v104",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to explain something so that someone finally understands'?",
+      "options": [
+        "mumble",
+        "ignore",
+        "enlighten",
+        "confuse"
+      ],
+      "answer": "enlighten",
+      "teach": "To enlighten someone is to switch a light on inside their head, so a puzzle suddenly makes sense."
+    },
+    {
+      "id": "v105",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Which word means 'to explain something in careful detail'?",
+      "options": [
+        "hurry",
+        "expound",
+        "forget",
+        "whisper"
+      ],
+      "answer": "expound",
+      "teach": "To expound is to set something out fully, point by point. Grandpa can expound on the proper way to brew tea for a good half hour."
+    },
+    {
+      "id": "v106",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Fallen leaves ___ over the winter and quietly feed the soil beneath them.",
+      "options": [
+        "freeze",
+        "sparkle",
+        "gather",
+        "decompose"
+      ],
+      "answer": "decompose",
+      "teach": "To decompose is to rot and break down naturally into simpler parts, which is how a forest feeds itself."
+    },
+    {
+      "id": "v107",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'extra information at the back of a book'?",
+      "options": [
+        "cover",
+        "preface",
+        "appendix",
+        "chapter"
+      ],
+      "answer": "appendix",
+      "teach": "An appendix sits at the back with the extra details. (Confusingly, you also have one inside you, and nobody is quite sure what it is for.)"
+    },
+    {
+      "id": "v108",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 2,
+      "prompt": "Which word means 'to light a fire, or to stir up a feeling'?",
+      "options": [
+        "kindle",
+        "smother",
+        "extinguish",
+        "dampen"
+      ],
+      "answer": "kindle",
+      "teach": "You kindle a fire with small dry twigs, and a wonderful book can kindle a love of reading in just the same way."
+    },
+    {
+      "id": "v109",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'sensible and careful about what might happen'?",
+      "options": [
+        "hasty",
+        "careless",
+        "reckless",
+        "prudent"
+      ],
+      "answer": "prudent",
+      "teach": "A prudent person thinks ahead - packing a waterproof even when the sky looks perfectly innocent."
+    },
+    {
+      "id": "v110",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "In old poems, 'the ether' means...",
+      "options": [
+        "a stone cellar",
+        "the clear upper sky",
+        "the deep ocean",
+        "a thick forest"
+      ],
+      "answer": "the clear upper sky",
+      "teach": "Ether is an old, poetic word for the clear air high above the clouds. (It was also the name of an early anaesthetic.)"
+    },
+    {
+      "id": "v111",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to run away secretly, usually in order to marry'?",
+      "options": [
+        "elope",
+        "arrive",
+        "celebrate",
+        "announce"
+      ],
+      "answer": "elope",
+      "teach": "To elope is to slip away quietly and marry without the big planned wedding - a great favourite in old novels."
+    },
+    {
+      "id": "v112",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'terrible destruction'?",
+      "options": [
+        "order",
+        "tidiness",
+        "carnage",
+        "calm"
+      ],
+      "answer": "carnage",
+      "teach": "Carnage means dreadful destruction. People use it lightly too: after the storm the beach was carnage, all snapped umbrellas and cross seagulls."
+    },
+    {
+      "id": "v113",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The twins ___ their uncle completely, and he never realised they had swapped places.",
+      "options": [
+        "hoodwinked",
+        "thanked",
+        "followed",
+        "greeted"
+      ],
+      "answer": "hoodwinked",
+      "teach": "To be hoodwinked is to be tricked or fooled. It comes from the old trick of pulling a hood over somebody's eyes."
+    },
+    {
+      "id": "v114",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "'The drought took a heavy toll on the crops.' Here, toll means...",
+      "options": [
+        "a long journey",
+        "a narrow bridge",
+        "a loud bell",
+        "the cost in damage or suffering"
+      ],
+      "answer": "the cost in damage or suffering",
+      "teach": "A toll is what something costs you, often in harm. (A toll is also a charge to cross a bridge, and the slow ringing of a bell.)"
+    },
+    {
+      "id": "v115",
+      "type": "choose_best_word",
+      "target_skill": "figurative_effect",
+      "difficulty": 3,
+      "prompt": "Calling the largest dog in the park 'Tiny' is an example of...",
+      "options": [
+        "simile",
+        "rhyme",
+        "alliteration",
+        "irony"
+      ],
+      "answer": "irony",
+      "teach": "Irony is saying the opposite of what you mean, so the listener hears both at once - and usually smiles."
+    },
+    {
+      "id": "v116",
+      "type": "choose_best_word",
+      "target_skill": "figurative_effect",
+      "difficulty": 2,
+      "prompt": "'The wind whispered secrets to the trees.' Which technique is that?",
+      "options": [
+        "personification",
+        "irony",
+        "hyperbole",
+        "onomatopoeia"
+      ],
+      "answer": "personification",
+      "teach": "Personification treats a thing as though it were a person. Wind cannot really whisper, which is exactly what makes the line lovely."
+    },
+    {
+      "id": "v117",
+      "type": "choose_best_word",
+      "target_skill": "figurative_effect",
+      "difficulty": 2,
+      "prompt": "Buzz, splash and crunch are all examples of...",
+      "options": [
+        "onomatopoeia",
+        "hyperbole",
+        "personification",
+        "irony"
+      ],
+      "answer": "onomatopoeia",
+      "teach": "Onomatopoeia is a word that sounds like the noise it names. You can hear the meaning as you say it."
+    },
+    {
+      "id": "v118",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'not caring at all'?",
+      "options": [
+        "apathy",
+        "curiosity",
+        "delight",
+        "enthusiasm"
+      ],
+      "answer": "apathy",
+      "teach": "Apathy is a complete shrug: no interest, no energy, no caring either way."
+    },
+    {
+      "id": "v119",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The ___ of the lake at dawn was broken only by two geese landing on it.",
+      "options": [
+        "racket",
+        "bustle",
+        "chaos",
+        "tranquillity"
+      ],
+      "answer": "tranquillity",
+      "teach": "Tranquillity is deep calm and peacefulness. Watch the double l in the middle: tranquillity."
+    },
+    {
+      "id": "v120",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'celebration and merrymaking'?",
+      "options": [
+        "boredom",
+        "festivity",
+        "silence",
+        "mourning"
+      ],
+      "answer": "festivity",
+      "teach": "Festivity is the happy noise of a celebration: lanterns, fiddles and far too many cakes."
+    },
+    {
+      "id": "v121",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Which word means 'being unknown, or hard to make out'?",
+      "options": [
+        "fame",
+        "obscurity",
+        "brightness",
+        "clarity"
+      ],
+      "answer": "obscurity",
+      "teach": "Obscurity means being unnoticed or unclear. A painter can live in obscurity for years before the galleries finally queue up."
+    },
+    {
+      "id": "v122",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 3,
+      "prompt": "Which word means 'only on the surface'?",
+      "options": [
+        "profound",
+        "deep",
+        "superficial",
+        "thorough"
+      ],
+      "answer": "superficial",
+      "teach": "Superficial means surface-level only. A superficial scratch needs a plaster and a biscuit, and nothing more."
+    },
+    {
+      "id": "v123",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 3,
+      "prompt": "Three of these mean taking sides. Which one means being fair to everybody?",
+      "options": [
+        "biased",
+        "partial",
+        "prejudiced",
+        "objective"
+      ],
+      "answer": "objective",
+      "teach": "Objective means judging fairly, without favouring anyone. A good referee stays objective however loudly the crowd shouts."
+    },
+    {
+      "id": "v124",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'strongly unfriendly'?",
+      "options": [
+        "gentle",
+        "welcoming",
+        "hostile",
+        "warm"
+      ],
+      "answer": "hostile",
+      "teach": "Hostile means unfriendly and opposed. A hostile stare says 'you are not welcome here' without a single word."
+    },
+    {
+      "id": "v125",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "The rain was ___ all weekend, so we built a den indoors instead.",
+      "options": [
+        "gentle",
+        "relentless",
+        "occasional",
+        "brief"
+      ],
+      "answer": "relentless",
+      "teach": "Relentless means never stopping or easing off - it simply keeps coming, hour after hour."
+    },
+    {
+      "id": "v126",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word means 'an award or high praise'?",
+      "options": [
+        "insult",
+        "warning",
+        "accolade",
+        "penalty"
+      ],
+      "answer": "accolade",
+      "teach": "An accolade is public praise or an award - the highest accolade in her whole sport."
+    },
+    {
+      "id": "v127",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "Which word describes a face showing no emotion at all?",
+      "options": [
+        "furious",
+        "delighted",
+        "tearful",
+        "impassive"
+      ],
+      "answer": "impassive",
+      "teach": "An impassive face gives nothing away, however much is going on behind it."
+    },
+    {
+      "id": "v128",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Thick mud began to ___ their progress up the hill.",
+      "options": [
+        "smooth",
+        "hasten",
+        "assist",
+        "impede"
+      ],
+      "answer": "impede",
+      "teach": "To impede is to get in the way and slow something down."
+    },
+    {
+      "id": "v129",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "Which word means 'to complain about something'?",
+      "options": [
+        "bemoan",
+        "praise",
+        "celebrate",
+        "enjoy"
+      ],
+      "answer": "bemoan",
+      "teach": "To bemoan is to grumble aloud about something. Gardeners bemoan the weather in every season going."
+    },
+    {
+      "id": "v130",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 2,
+      "prompt": "Which word means 'very high, or grand and superior'?",
+      "options": [
+        "lofty",
+        "tiny",
+        "squat",
+        "humble"
+      ],
+      "answer": "lofty",
+      "teach": "Lofty means towering high. It also describes grand ideas, or somebody with a rather superior manner."
+    },
+    {
+      "id": "v131",
+      "type": "fill_the_gap",
+      "target_skill": "meaning_in_context",
+      "difficulty": 3,
+      "prompt": "She felt her heart ___ as the first firework whistled upwards.",
+      "options": [
+        "settle",
+        "slow",
+        "rest",
+        "palpitate"
+      ],
+      "answer": "palpitate",
+      "teach": "To palpitate is to beat fast and flutter - the word your heart deserves at a thrilling moment."
+    },
+    {
+      "id": "v132",
+      "type": "odd_one_out",
+      "target_skill": "word_relationships",
+      "difficulty": 2,
+      "prompt": "Three of these describe towns and cities. Which one describes the countryside?",
+      "options": [
+        "rural",
+        "urban",
+        "suburban",
+        "industrial"
+      ],
+      "answer": "rural",
+      "teach": "Rural means to do with the countryside. Urban is its opposite, meaning to do with cities."
+    },
+    {
+      "id": "v133",
+      "type": "choose_best_word",
+      "target_skill": "meaning_in_context",
+      "difficulty": 2,
+      "prompt": "If two lists 'correspond', they...",
+      "options": [
+        "vanish",
+        "cancel each other",
+        "match each other",
+        "disagree completely"
+      ],
+      "answer": "match each other",
+      "teach": "To correspond is to match up. It also means to write letters to somebody over a long stretch of time."
+    },
+    {
+      "id": "v134",
+      "type": "choose_best_word",
+      "target_skill": "ambitious_words",
+      "difficulty": 3,
+      "prompt": "Which word means 'a soft whispering or rustling sound'?",
+      "options": [
+        "roar",
+        "bang",
+        "clatter",
+        "susurration"
+      ],
+      "answer": "susurration",
+      "teach": "Susurration is the gentlest word in English for a whisper of leaves or distant voices. It even sounds like the sound it names."
+    },
+    {
+      "id": "v135",
+      "type": "choose_best_word",
+      "target_skill": "shades_of_meaning",
+      "difficulty": 2,
+      "prompt": "If something is 'uniform', it is...",
+      "options": [
+        "the same all the way through",
+        "changing constantly",
+        "brightly patterned",
+        "broken into pieces"
+      ],
+      "answer": "the same all the way through",
+      "teach": "Uniform means unvarying, the same throughout. That is why school uniform has its name - everybody matches."
     }
   ]
 }
